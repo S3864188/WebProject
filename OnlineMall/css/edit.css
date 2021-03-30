@@ -1,0 +1,284 @@
+/* Google Font (Roboto 400). Link:https://fonts.google.com/specimen/Roboto?preview.text_type=custom */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Header */
+
+/* Navigation Top */
+.nav-top li, .nav-top li a{
+    font-family:'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-top{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 10px;
+    width: 100%;
+    background-color: #7e7;
+    z-index: 3;
+}
+
+.left{
+    margin-right: auto;
+}
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a{
+    transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover{
+    color: white;
+}
+
+/*--Language-------------------------*/
+.lang-menu{
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+.selected-lang::before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/vn/flat/32.png);
+}
+.lang-menu ul{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+}
+.lang-menu ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.lang-menu ul li a{
+    width: 125px;
+    display: block;
+    padding: 5px 10px;
+    color: black;
+}
+.lang-menu ul li a:before{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.lang-menu ul li a:hover{
+    background-color: #f2f2f2;
+}
+
+.de:before{
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+.fr:before{
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+.us:before{
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.ae:before{
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+.lang-menu:hover ul{
+    display: block;
+}
+
+/* Navigation Bot */
+.nav-bot{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 10px;
+    width: 100%;
+    background-color: #7e7;
+    top: 32px;
+    z-index: 2;
+}
+
+.logo{
+    cursor: pointer;
+    padding-left: 130px;
+}
+
+.search-box-wrapper {
+    display: inline-flex;
+    font-size: 20px;
+    padding-left: 130px;
+}
+
+.search-box-input {
+    font-size: inherit;
+    padding: 0.2em 0.5em;
+    outline: none;
+    border: none;
+    width: 500px;
+}
+
+.search-box-button {
+    font-size: inherit;
+    border: none;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: greenyellow;
+    border-left: 0px;
+    padding: 0 0.75em;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box-button:hover,
+.search-box-button:focus {
+    border-color: #4d4;
+    background-color: #4d4;
+}
+
+.cart{
+    cursor: pointer;
+    display: block;
+    padding-left: 50px;
+}
+.cart .fas{
+    font-size: 25px;
+}
+
+
+
+/* Home Page */
+#advertisement{
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Slide with autoplay and manual navigation button */
+
+.home{
+  height: 85vh;
+  position: relative;
+}
+
+.home .container{
+  position: relative;
+  width: 1020px;
+  height: 540px;
+  background: #f2f2f2;
+  margin: 0px 20px 10px 20px;
+}
+.home .slide{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1050px;
+  height: 540px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display:none;
+  padding: 0 15px;
+  animation: slide 2s ease;
+}
+
+.home .slide.active{
+  display: flex;
+}
+
+.home .slide img{
+  z-index: 1;
+  margin: 0px -5px 0px -15px;
+  width: 1030px;
+  height: 540px;
+}
+
+  /*-- Prev, Next buttons */
+.home .controls .prev,
+.home .controls .next{
+  position: absolute;
+  z-index: 4;
+  top: 35%;
+  height:60px;
+  width: 30px;
+  color:#ffffff;
+  background-color: black;
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+  cursor:pointer;
+  transition: all .5s ease;
+}
+.home .controls .prev:hover, .home .controls .prev:active,
+.home .controls .next:hover, .home .controls .next:active{
+  color: #FF5722;
+}
+.home .controls .prev{
+  right: 1010px;
+}
+.home .controls .next{
+  left: 1010px;
+}
+
+.home .indicator{
+  position: absolute;
+  left: 50%;
+  top: 550px;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.home .indicator div{
+  display: inline-block;
+  width:25px;
+  height: 25px;
+	color:#ffffff;
+  background-color: #FF5722;
+  border-radius:50%;
+  text-align: center;
+  line-height: 25px;
+  margin:0 3px;
+}
+
+.home .indicator div.active{
+  background-color: #000;
+}
