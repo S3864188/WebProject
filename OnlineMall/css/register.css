@@ -3,18 +3,19 @@
     padding: 0;
 
 }
-
+/* Display background*/
 body{
     display: block;
     height: 160vh;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: white;
     background-position: center;
     font-family: sans-serif;
     margin-top: 40px;
 }
+/* Title  */
 .regform{
     width: 800px;
     background-color: rgb(0,0,0, 0.6);
@@ -24,20 +25,22 @@ body{
     text-align: center;
     border-radius: 15px 15px 0px 0px;
 }
+/* Form and main table */
 .main{
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.4);
     width: 800px;
     margin: auto;
 }
+/* Form */
 form{
     padding: 20px;
 }
-
 
 #name{
     width: 100%;
     height: 60px;
 }
+/* Main form for the the register form */
 .name{
     margin-left: 25px;
     margin-top: 30px;
@@ -46,6 +49,7 @@ form{
     font-size: 18px;
     font-weight: 700;
 }
+/* Input first name, last name, and their label bellow */
 .firstname{
     position: relative;
     left: 200px;
@@ -81,6 +85,7 @@ form{
     left: 185px;
     top: -45px;
 }
+/* Input email */
 .email{
     position: relative;
     left: 200px;
@@ -92,6 +97,7 @@ form{
     font-size: 16px;
     color: #555;
 }
+/* input area code, phone number and their label bellow */
 .code{
     position: relative;
     left: 200px;
@@ -130,6 +136,7 @@ form{
     left: -100px;
     top: -1px;
 }
+/* input password and retype password */
 .password{
     position: relative;
     left: 200px;
@@ -152,6 +159,7 @@ form{
     font-size: 16px;
     color: #555;
 }
+/* input address */
 .address{
     position: relative;
     left: 200px;
@@ -163,6 +171,7 @@ form{
     font-size: 16px;
     color: #555;
 }
+/* input city */
 .city{
     position: relative;
     left: 200px;
@@ -174,6 +183,7 @@ form{
     font-size: 16px;
     color: #555;
 }
+/* input zipcode */
 .zipcode{
     position: relative;
     left: 200px;
@@ -185,6 +195,7 @@ form{
     font-size: 16px;
     color: #555;
 }
+/* Display dropdown select */
 .option{
     position: relative;
     left: 200px;
@@ -199,11 +210,13 @@ form{
     outline: none;
     overflow: hidden;
 } 
+/* font letter */
 #account{
     margin-left: 25px;
     color: white;
     font-size: 18px;
 }
+/* radio display */
 .radio{
     display: inline-block;
     padding-right: 150px;
@@ -212,6 +225,7 @@ form{
     margin-top: 15px;
     color: white;
 }
+
 .radio input{
     width: 20px;
     height: 20px;
@@ -219,7 +233,7 @@ form{
     cursor: pointer;
     outline: none;
 }
-
+/* display profile img */
 img{
     height: 200px;
 }
@@ -255,6 +269,11 @@ img{
     font-size: 15px;
     cursor: pointer;
 }
+/* change link color letter */
+a{
+   color: blue; 
+}
+/* register button */
 button{
     background-color: #3BAF9F;
     display: block;
