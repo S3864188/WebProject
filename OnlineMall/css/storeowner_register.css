@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* display background */
+body{
+    display: block;
+    height: 160vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    background-position: center;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+/* title */
+.regform{
+    width: 800px;
+    background-color: rgb(0,0,0, 0.6);
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+/* form and main table */
+.main{
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 800px;
+    margin: auto;
+}
+form{
+    padding: 20px;
+}
+/* main font letter */
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+/* input business name */
+.business_name{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 485px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+/* input store name */
+.store_name{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 485px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+/* radio display */
+.option{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 532px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    overflow: hidden;
+} 
+/* register button */
+button{
+    background-color: #3BAF9F;
+    display: block;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+}
+button:hover{
+    background-color: #5390F5;
+}
+/* reset button */
+.reset{
+    float: left;
+    background-color: #3BAF9F;
+    display: block;
+    margin: 20px 160px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+}
+.reset:hover{
+    background-color: #5390F5;
+}
+#account{
+    margin-left: 25px;
+    color: white;
+    font-size: 18px;
+}
+/* change link color letter */
+a{
+    color: blue; 
+ }
