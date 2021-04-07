@@ -1,3 +1,6 @@
+/* Google Font Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 /* display background */
 *{
     margin: 0;
@@ -13,24 +16,27 @@ body{
     padding: 10px;
     background: white;
     background-position: center;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 40px;
 }
 /* Title  */
 .regform{
     width: 800px;
-    background-color: rgb(0,0,0, 0.6);
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
     margin: auto;
-    color: #FFFFFF;
+    color: black;
     padding: 10px 0px 10px 0px;
     text-align: center;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px black solid;
 }
 /* Form and main table */
 .main{
-    background-color: rgb(0, 0, 0, 0.4);
     width: 800px;
     margin: auto;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-radius: 0 0 10px 10px;
+    border: 2px black solid;
 }
 /* Form */
 form{
@@ -46,7 +52,7 @@ form{
     margin-left: 25px;
     margin-top: 30px;
     width: 125px;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 700;
 }
@@ -214,8 +220,8 @@ form{
 /* font letter */
 #account{
     margin-left: 25px;
-    color: white;
-    font-size: 18px;
+    color: black;
+    font-size: 16px;
 }
 /* radio display */
 .radio{
@@ -264,9 +270,9 @@ img{
     transform: translateX(-50%);
     text-align: center;
     background: rgba(0, 0, 0, 0.7) ;
-    color: wheat;
+    color: white;
     line-height: 30px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     cursor: pointer;
 }
@@ -280,11 +286,12 @@ button{
     display: block;
     margin: 20px 0px 0px 20px;
     text-align: center;
-    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
     border: 2px solid #366473;
     padding: 14px 340px;
     outline: none;
-    color: white;
+    color: black;
     cursor: pointer;
     transition: 0.25px;
 }
