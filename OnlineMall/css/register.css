@@ -225,12 +225,13 @@ form{
 }
 /* radio display */
 .radio{
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
     padding-right: 150px;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 80px;
     margin-top: 15px;
-    color: white;
+    color: black;
 }
 
 .radio input{
@@ -281,7 +282,7 @@ a{
    color: blue; 
 }
 /* register button */
-button{
+.button{
     background-color: #3BAF9F;
     display: block;
     margin: 20px 0px 0px 20px;
@@ -295,6 +296,6 @@ button{
     cursor: pointer;
     transition: 0.25px;
 }
-button:hover{
+.button:hover{
     background-color: #5390F5;
 }
