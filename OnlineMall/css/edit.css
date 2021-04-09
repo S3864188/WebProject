@@ -1,198 +1,159 @@
 /* Google Font (Roboto 400). Link:https://fonts.google.com/specimen/Roboto?preview.text_type=custom */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Set up */
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family:'Roboto', sans-serif;
 }
-span{
+a{
   text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+html{
+  font-size: 67.5%;
+}
+img{
+  max-width: 100%;
 }
 body{
-  min-height: 100%;
+  background: #f2f2f2;
 }
-/* 1. Header */
-.all-nav{
-  width: 100%;
-  z-index: 5;
-}
-/* Navigation Top */
-.nav-top, .nav-bot{
+/*
+============
+===Header===
+============ 
+*/
+
+/* Navigation */
+nav{
   position: fixed;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
-  padding: 0px 10px;
   width: 100%;
-}
-.nav-top{
-  z-index: 4;
-}
-
-.nav-top li, .nav-top li a{
-  font-weight: 500;
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
-}
-.nav-links .fab{
-  padding: 0px 3px;
-}
-.left{
-  margin-right: auto;
-}
-.nav-links{
-  list-style: none;
-}
-
-.nav-links li{
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav-links li a{
-  transition: all 0.3 ease 0s;
-}
-
-.nav-links li a:hover{
-  color: white;
-}
-
-/*--Language-------------------------*/
-.lang-menu{
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 10px; 
-  position: relative;
-}
-.selected-lang{
-  cursor: pointer;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
   display: flex;
-  justify-content: space-between;
-  line-height: 2;
-  width: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  padding: 0 60px;
+  z-index: 1000;
 }
-.selected-lang::before{
-  content: '';
-  display: block;
-  width: 32px;
-  height: 32px;
-  background-image: url(https://www.countryflags.io/vn/flat/32.png);
-}
-.lang-menu ul{
+
+/* Logo */
+nav .logo img{
+  color: #fff;
+  height: 50px;
   margin: 0;
-  padding: 0;
-  background-color: #fff;
-  border: 1px solid #f8f8f8;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  display: none;
-  position: absolute;
-  top: 30px;
-  left: 0;
 }
-.lang-menu ul li{
-  list-style: none;
+
+/* Navigation Items */
+nav .nav-items{
   display: flex;
-  justify-content: space-between;
+  flex: 1;
+  padding: 0 0 0 40px;
 }
-.lang-menu ul li a{
-  width: 125px;
+nav .nav-items .logo-mobile{
+  display: none;
+}
+nav .nav-items li{
+  list-style: none;
+  padding: 0 15px;
+}
+
+nav .nav-items li a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav .nav-items li a:hover{
+  color: #1995ad;
+}
+
+/* Social Media */
+.social-mobile{
+  position: sticky;
+  top: 75%;
+  float: left;
+  width: 100%;
+  margin: 0;
+  display: none;
+}
+
+.social-mobile ul{
   display: block;
-  padding: 5px 10px;
-  color: black;
+  text-align: center;
+  margin: 0;
 }
-.lang-menu ul li a:before{
-  content: '';
+
+.social-mobile ul li{
   display: inline-block;
-  width: 32px;
-  height: 32px;
-  margin-right: 5px;
-  vertical-align: middle;
+  margin: 0 5px;
 }
 
-.lang-menu ul li a:hover{
-  background-color: #f2f2f2;
-}
-
-.de:before{
-  background-image: url(https://www.countryflags.io/de/flat/32.png);
-}
-.fr:before{
-  background-image: url(https://www.countryflags.io/fr/flat/32.png);
-}
-.us:before{
-  background-image: url(https://www.countryflags.io/us/flat/32.png);
-}
-.ae:before{
-  background-image: url(https://www.countryflags.io/ae/flat/32.png);
-}
-.lang-menu:hover ul{
+.social-mobile ul li a{
   display: block;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 0 5px;
+}
+/* Search */
+nav form{
+  display: flex;
+  height: 40px;
+  padding: 2px;
+  background: #fff;
+  min-width: 18% !important;
+  border-radius: 2px;
+  border: 1px solid rgba(155,155,155,0.2);
 }
 
-/* Navigation Bot */
-.nav-bot{
-  height: 60px;
-  top: 32px;
-  z-index: 3;
-}
-
-.logo, .search-box-wrapper, .cart{
-  padding-top: 5px;
-}
-.logo{
-  cursor: pointer;
-  padding-left: 130px;
-}
-
-.search-box-wrapper {
-  display: inline-flex;
-  font-size: 20px;
-  padding-left: 130px;
-
-}
-
-.search-box-input {
-  font-size: inherit;
-  padding: 0.2em 0.5em;
-  outline: none;
+nav form .search-data{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: black;
+  font-size: 17px;
   border: none;
-  width: 500px;
+  font-weight: 500;
+  background: none;
+  outline: none;
 }
 
-.search-box-button {
-  font-size: inherit;
+nav form button{
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background: #f18d9e;
   border: none;
-  border-radius: 0 0.5em 0.5em 0;
-  background-color: greenyellow;
-  border-left: 0px;
-  padding: 0 0.75em;
-  color: white;
-  font-weight: bold;
-  outline: none;
+  border-radius: 2px;
   cursor: pointer;
 }
 
-.search-box-button:hover,
-.search-box-button:focus {
-  border-color: #4d4;
-  background-color: #4d4;
+nav form button:hover{
+  background: #dd8090;
 }
 
+/* Cart */
 .cart{
   cursor: pointer;
-  display: block;
-  padding-left: 50px;
+  display: flex;
+  padding-left: 5px;
+  margin: 0px 30px;
 }
-.cart .fa-shopping-cart{
+
+.cart i{
   position: relative;
   font-size: 25px;
   color: black;
 }
+
 .cart .num-cart-product{
   position: absolute;
   bottom: 18px;
@@ -209,8 +170,65 @@ body{
   font-weight: 400;
 }
 
+/* User-Account */
+.user-account{
+  cursor: pointer;
+  display: flex;
+  padding-left: 5px;
+  margin: 0px 10px;
+}
+.user-account i{
+  font-size: 25px;
+  color: black;
+}
 
-/* Home Page */
+/* Icon (Tablet-Mobile) */
+nav .menu-icon,
+nav .search-icon,
+nav .cart-icon,
+nav .user-icon{
+  width: 40px;
+  text-align: center;
+  margin: 0 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+nav .menu-icon span,
+nav .cancel-icon,
+nav .cancel-icon-nav,
+nav .search-icon,
+nav .cart-icon,
+nav .user-icon{
+  display: none;
+}
+
+.nav-icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+
+.nav-items .cancel-icon-nav{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.cancel-icon span::before{
+  margin: 0 16px;
+}
+
+
+/*
+===============
+===Home Page=== 
+===============
+*/
 
 /* Heading Slider */
 #advertisement{
@@ -724,7 +742,11 @@ body{
   font-size: 0.9rem;
 }
 
-/* Footer */
+/* 
+============
+===Footer=== 
+============
+*/
 #footer{
   line-height: 1.5;
   position: relative;
@@ -845,20 +867,231 @@ body{
 
 
 
-/* Responsive */
-@media(max-width: 1024px){
-  .footer{
-    background-color: black;
+/* 
+================
+===Responsive===
+================
+*/
+
+@media only screen and (max-width: 1246px) {
+  /* Navigation */
+  nav{
+    padding: 0 50px;
+  }
+  nav .logo img{
+    height: 40px;
+  }
+  nav .nav-items li a{
+    font-size: 13px;
+  }
+  .search-box-wrapper{
+    width: 20%;
+  }
+  nav form{
+    height: 28px;
+    width: 100%;
+  }
+  .cart{
+    margin: 0 30px;
+  }
+  .cart i{
+    font-size: 20px;
+  }
+  .cart .num-cart-product{
+    left: 14px;
+    bottom: 14px;
   }
 }
-@media(max-width: 767px){
+@media only screen and (max-width: 1134px){
+  nav{
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  nav{
+    padding: 0px;
+  }
+  nav .logo{
+    flex: 2;
+    text-align: left;
+  }
+  nav .nav-items .logo-mobile{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex: 2;
+    align-items: center;
+    height: 36px;
+  }
+
+  /* Navigation Items */
+  nav .nav-items{
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    width: 40%;
+    left: -100%;
+    height: 100%;
+    padding: 0 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: inline-block;
+    transition: left 0.3s ease;
+  }
+  nav .nav-items.active{
+    left: 0px;
+  }
+  nav .nav-items li{
+    line-height: 40px;
+    margin: 30px 0;
+  }
+  nav .nav-items li a{
+    font-size: 20px;
+  }
+  nav .nav-items .social-mobile{
+    display: block;
+  }
+  /* Search */
+  nav form{
+    position: absolute;
+    top: 80px;
+    right: 20%;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.3s ease, opacity 0.1s ease;
+    width: 25%;
+  }
+  nav form.active{
+    top: 95px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  nav form:before{
+    position: absolute;
+    content: "";
+    top: -18px;
+    right: 91%;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border: 10px solid transparent;
+    border-bottom-color: #629ec7;
+    margin: -20px 0 0;
+  }
+  nav form:after{
+    position: absolute;
+    content: '';
+    height: 60px;
+    padding: 2px;
+    background: #71b7e6;
+    border-radius: 2px;
+    min-width: calc(100% + 20px);
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  nav .menu-icon{
+    display: block;
+  }
+  nav .search-icon,
+  nav .cart-icon,
+  nav .user-icon,
+  nav .menu-icon span{
+    display: block;
+  }
+
+  nav .menu-icon span.hide,
+  nav .search-icon.hide,
+  nav .cart-icon.hide,
+  nav .user-icon.hide{
+    display: none;
+  }
+  nav .cancel-icon.show,
+  nav .cancel-icon-nav.show{
+    display: block;
+  }
+  nav .cancel-icon.show{
+    margin: 0 28px;
+  }
+  nav .cart, nav .user-account{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 980px){
+  /* Header */
+
+  /* Icon (Tablet-Mobile) */
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .cancel-icon-nav,
+  nav .search-icon,
+  nav .cart-icon,
+  nav .user-icon{
+    margin: 0 20px;
+  }
+  nav .nav-items{
+    width: 35%;
+  }
+  nav .nav-items li{
+    line-height: 20px;
+  }
+  nav form{
+    right: 17%;
+  }
+  /* Footer */
   .footer-col{
     width: 25%;
     margin-bottom: 30px;
   }
 }
 
-@media(max-width: 574px){
+@media only screen and (max-width: 768){
+  /* Header */
+
+  /* Icon (Tablet-Mobile) */
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .cancel-icon-nav,
+  nav .search-icon,
+  nav .cart-icon,
+  nav .user-icon{
+    margin: 0 10px;
+    font-size: 15px;
+  }
+  nav .logo{
+    font-size: 20px;
+  }
+
+  /* Footer */
+  .footer-col{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 426px){
+  /* Header */
+
+  /* Icon (Tablet-Mobile) */
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .cancel-icon-nav,
+  nav .search-icon,
+  nav .cart-icon,
+  nav .user-icon{
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  nav .logo img{
+    height: 10px;
+  }
+
+  /* Footer */
   .footer-col{
     width: 100%;
   }
