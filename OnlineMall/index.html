@@ -3,80 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>Online Mall</title>
+    <!-- Mall CSS -->
     <link rel="stylesheet" href="./css/edit.css">
     <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
-    <link rel="stylesheet" href="./css/all.min.css">
     <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
   </head>
   
   <body>
-    <header class="all-nav">
-      <!-- Navigation top -->
-      <div class="nav-top">
-        <nav class="left">
-          <ul class="nav-links">
-            <li><a href="#">Seller Channel</a></li>
-            <li>
-              Social Media:
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-          </ul>
-          <div class="social">
-            
-          </div>
-        </nav>
-        
-        <nav class="middle">
-          <ul class="nav-links">
-            <li><a href="#">Notification</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
-        </nav>
+    <!-- Header -->
+    <header>
+      <nav>
+        <!-- Bar Icon -->
+        <div class="menu-icon">
+          <span class="fas fa-bars"></span>
+        </div>
+        <!-- Logo -->
+        <div class="logo"><img src="./images/logo.png" alt="mall.logo"></div>
 
-        <nav class="right">
-          <div class="lang-menu">
-            <div class="selected-lang">
-              Vietnam
-            </div>
+        <!-- Navigation-items -->
+        <ul class="nav-items">
+          <div class="logo-mobile"><img src="./images/logo.png" alt="mall.logo"></div>
+          <div class="nav-icon cancel-icon-nav">
+            <span class="fas fa-times"></span>
+          </div>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Associated Brand</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Seller Channel</a></li>
+          <!-- Social Media (Tablet, Mobile) -->
+          <div class="social-mobile">
             <ul>
-              <li><a href="#" class="de">German</a></li>
-              <li><a href="#" class="us">English</a></li>
-              <li><a href="#" class="fr">French</a></li>
-              <li><a href="#" class="ae">Arabic</a></li>
+              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div>
-        </nav>
-      </div>
-      <!-- Navigation Bot -->
-      <div class="nav-bot">
-        <!-- Left (logo) -->
-        <img src="./images/logo.png" alt="logo" class="logo">
-        <!-- Middle (search bar) -->
-        <div class="search-bar">
+        </ul>
+
+        <!-- Icon (Tablet, Mobile) -->
+        <div class="search-icon">
+          <span class="fas fa-search"></span>
+        </div>
+
+        <div class="nav-icon cancel-icon">
+          <span class="fas fa-times"></span>
+        </div>
+
+        <div class="cart-icon">
+          <span class="fas fa-shopping-cart"></span>
+        </div>
+    
+        <div class="user-icon">
+          <span class="fas fa-user-circle"></span>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box-wrapper">
           <form action="#">
-            <div class="search-box-wrapper">
-              <input type="text" class="search-box-input" placeholder="Search..." name="search">
-              <button type="submit" class="search-box-button"><i class="fas fa-search"></i></button>
-            </div>
+            <input type="search" class="search-data" placeholder="Search..." required>
+            <button type="submit" class="fas fa-search"></button>
           </form>
         </div>
-        <!-- Right (cart) -->
+
+        <!-- Cart -->
         <div class="cart">
-          <a href="">
+          <a href="#">
             <i class="fas fa-shopping-cart">
               <!-- number of product in cart -->
               <span class="num-cart-product">0</span>
             </i>
           </a>
         </div>
-      </div>
+
+        <!-- User-Account -->
+        <div class="user-account">
+          <a href="#"><i class="fas fa-user-circle"></i></a>
+        </div>
+
+      </nav>
+      <script src="./js/responsive.js"></script>
     </header>
 
-    <div class="homepage">
+    <!-- Main -->
+    <main class="homepage">
       <!-- Heading Slider -->
       <div id="advertisement">
         <div class="home">
@@ -954,7 +965,7 @@
           <p>We will support you if having issue</p>
         </div>
       </section>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="footer" id="footer">

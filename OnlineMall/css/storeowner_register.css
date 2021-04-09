@@ -1,3 +1,8 @@
+/* Google Font Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/* display background */
 *{
     margin: 0;
     padding: 0;
@@ -12,25 +17,29 @@ body{
     padding: 10px;
     background: white;
     background-position: center;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 40px;
 }
-/* title */
+/* Title  */
 .regform{
     width: 800px;
-    background-color: rgb(0,0,0, 0.6);
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
     margin: auto;
-    color: #FFFFFF;
+    color: black;
     padding: 10px 0px 10px 0px;
     text-align: center;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px black solid;
 }
-/* form and main table */
+/* Form and main table */
 .main{
-    background-color: rgb(0, 0, 0, 0.4);
     width: 800px;
     margin: auto;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-radius: 0 0 10px 10px;
+    border: 2px black solid;
 }
+/* Form */
 form{
     padding: 20px;
 }
@@ -39,7 +48,7 @@ form{
     margin-left: 25px;
     margin-top: 30px;
     width: 125px;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 700;
 }
@@ -119,8 +128,8 @@ button:hover{
 }
 #account{
     margin-left: 25px;
-    color: white;
-    font-size: 18px;
+    color: black;
+    font-size: 16px;
 }
 /* change link color letter */
 a{
