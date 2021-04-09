@@ -1,0 +1,137 @@
+/* Google Font Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/* display background */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* display background */
+body{
+    display: block;
+    height: 160vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+}
+/* Title  */
+.regform{
+    width: 800px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    margin: auto;
+    color: black;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px black solid;
+}
+/* Form and main table */
+.main{
+    width: 800px;
+    margin: auto;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-radius: 0 0 10px 10px;
+    border: 2px black solid;
+}
+/* Form */
+form{
+    padding: 20px;
+}
+/* main font letter */
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+/* input business name */
+.business_name{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 485px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+/* input store name */
+.store_name{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 485px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+/* radio display */
+.option{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 532px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    overflow: hidden;
+} 
+/* register button */
+button{
+    background-color: #3BAF9F;
+    display: block;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+}
+button:hover{
+    background-color: #5390F5;
+}
+/* reset button */
+.reset{
+    float: left;
+    background-color: #3BAF9F;
+    display: block;
+    margin: 20px 160px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+}
+.reset:hover{
+    background-color: #5390F5;
+}
+#account{
+    margin-left: 25px;
+    color: black;
+    font-size: 16px;
+}
+/* change link color letter */
+a{
+    color: blue; 
+ }
