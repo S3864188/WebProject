@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- title -->
+    <title>Login Form</title>
+    <!-- Css Link-->
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
+    <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- Header -->
+     <header>
+        <nav>
+          <!-- Bar Icon -->
+          <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+          </div>
+          <!-- Logo -->
+          <div class="logo"><img src="./images/logo.png" alt="mall.logo"></div>
+  
+          <!-- Navigation-items -->
+          <ul class="nav-items">
+            <div class="logo-mobile"><img src="./images/logo.png" alt="mall.logo"></div>
+            <div class="nav-icon cancel-icon-nav">
+              <span class="fas fa-times"></span>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Associated Brand</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Seller Channel</a></li>
+            <!-- Social Media (Tablet, Mobile) -->
+            <div class="social-mobile">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </ul>
+  
+          <!-- Icon (Tablet, Mobile) -->
+          <div class="search-icon">
+            <span class="fas fa-search"></span>
+          </div>
+  
+          <div class="nav-icon cancel-icon">
+            <span class="fas fa-times"></span>
+          </div>
+  
+          <div class="cart-icon">
+            <span class="fas fa-shopping-cart"></span>
+          </div>
+      
+          <div class="user-icon">
+            <span class="fas fa-user-circle"></span>
+          </div>
+  
+          <!-- Search -->
+          <div class="search-box-wrapper">
+            <form action="#">
+              <input type="search" class="search-data" placeholder="Search..." required>
+              <button type="submit" class="fas fa-search"></button>
+            </form>
+          </div>
+  
+          <!-- Cart -->
+          <div class="cart">
+            <a href="#">
+              <i class="fas fa-shopping-cart">
+                <!-- number of product in cart -->
+                <span class="num-cart-product">0</span>
+              </i>
+            </a>
+          </div>
+  
+          <!-- User-Account -->
+          <div class="user-account">
+            <a href="#"><i class="fas fa-user-circle"></i></a>
+          </div>
+  
+        </nav>
+        <script src="./js/responsive.js"></script>
+      </header>
+
+
+      
+     <!-- Main screen Login-->   
+    <main>
+        <div class="center">
+            <!-- Title-->
+            <h1>Login</h1>
+            <form method="POST">
+                <!-- Input user name and password-->
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label> Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label> Password</label>
+                </div>
+                <!-- Forgetpassword link-->
+                <div class="pass"><a href="forgetpassword.html">Forgot Password</a></div>
+                <!-- Submit button-->
+                <input class="submit" type="submit" value="Login">
+                <!-- Signup link-->
+                <div class="sigup_link">
+                    Not a member? <a href="registerscreen.html">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </main>
+  
+    
+
+     <!-- Footer -->
+     <footer class="footer" id="footer">
+        <div class="container">
+          <div class="row">
+  
+            <!-- Company  -->
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Our Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                
+              </ul>
+            </div>
+  
+            <!-- Get Help -->
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                <li><a href="#">F.A.Q</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order Status</a></li>
+              </ul>
+            </div>
+  
+            <!-- Payment, Shipping -->
+            <div class="footer-col">
+              <h4>Payment Options</h4>
+              <ul class="pay-ship-logo">
+                <li><img src="./images/visa.png" alt="visa" class="pay-ship"></li>
+                <li><img src="./images/mastercard.png" alt="mastercard" class="pay-ship"></li>
+                <li><img src="./images/momo.png" alt="momo" class="pay-ship"></li>
+              </ul>
+            </div>
+  
+            <!-- Follow Us on -->
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+              
+            </div>
+  
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+          <span>&#169 2021 - Online Mall</span>
+        </div>
+      </footer>
+</body>
+</html>

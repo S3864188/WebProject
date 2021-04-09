@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- title -->
+        <title> Store Owner Registration Form </title>
+        <!-- css link -->
+        <link rel="stylesheet" href="css/storeowner_register.css">
+        <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
+        <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
+ 
+    </head>
+    <body>
+        <!-- Header -->
+    <header>
+        <nav>
+          <!-- Bar Icon -->
+          <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+          </div>
+          <!-- Logo -->
+          <div class="logo"><img src="./images/logo.png" alt="mall.logo"></div>
+  
+          <!-- Navigation-items -->
+          <ul class="nav-items">
+            <div class="logo-mobile"><img src="./images/logo.png" alt="mall.logo"></div>
+            <div class="nav-icon cancel-icon-nav">
+              <span class="fas fa-times"></span>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Associated Brand</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Seller Channel</a></li>
+            <!-- Social Media (Tablet, Mobile) -->
+            <div class="social-mobile">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </ul>
+  
+          <!-- Icon (Tablet, Mobile) -->
+          <div class="search-icon">
+            <span class="fas fa-search"></span>
+          </div>
+  
+          <div class="nav-icon cancel-icon">
+            <span class="fas fa-times"></span>
+          </div>
+  
+          <div class="cart-icon">
+            <span class="fas fa-shopping-cart"></span>
+          </div>
+      
+          <div class="user-icon">
+            <span class="fas fa-user-circle"></span>
+          </div>
+  
+          <!-- Search -->
+          <div class="search-box-wrapper">
+            <form action="#">
+              <input type="search" class="search-data" placeholder="Search..." required>
+              <button type="submit" class="fas fa-search"></button>
+            </form>
+          </div>
+  
+          <!-- Cart -->
+          <div class="cart">
+            <a href="#">
+              <i class="fas fa-shopping-cart">
+                <!-- number of product in cart -->
+                <span class="num-cart-product">0</span>
+              </i>
+            </a>
+          </div>
+  
+          <!-- User-Account -->
+          <div class="user-account">
+            <a href="#"><i class="fas fa-user-circle"></i></a>
+          </div>
+  
+        </nav>
+        <script src="./js/responsive.js"></script>
+      </header>
+
+        <main>
+            <!--Making a title for the table -->
+        <div class="regform"><h1>Registration Form (For Owner Store Only)</h1></div>
+        <div class="main">
+            <form action="">
+                <!---->
+                <h2 class="name">Business Name</h2>
+                <input class="business_name" type="text" name="business_name">
+                <!---->
+                <h2 class="name">Store Name</h2>
+                <input class="store_name" type="text" name="store_name">
+                <!---->
+                <h2 class="name">Store Category</h2>
+                <select class="option" name="category_option" >
+                    <option disabled="disabled" selected="selected">--Choose your Store Category Option--</option>
+                    <option value="department_stores">Department Stores</option>
+                    <option value="grocery_stores">Grocery Stores</option>
+                    <option value="restaurants">Restaurants</option>
+                    <option value="clothing_stores">Clothing Stores</option>
+                    <option value="accessory_stores">Accessory Stores</option>
+                    <option value="pharmacies">Pharmacies</option>
+                    <option value="technology_stores">Technology Stores</option>
+                    <option value="pet_stores">Pet Stores</option>
+                    <option value="toy_stores">Toy Stores</option>
+                    <option value="specialty_stores"> Specialty Stores</option>
+                    <option value="thrift_stores">Thrift Stores</option>
+                    <option value="services">Services</option>
+                    <option value="kiosks">Kiosks</option>
+                </select>
+            <!--giving announce about privacy policy-->    
+                <h2 id="account">By continuing, you agree to Online Mall's <a href="">Privacy Policy</a>.</h2>
+            <!--Button to reset the register form-->    
+                <input class="reset" type="reset" value="Reset">
+            <!--Button to submit the register form -->
+                <button type="submit">Register</button>    
+            </form>
+        </div>
+
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+        
+                  <!-- Company  -->
+                  <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                      <li><a href="#">About US</a></li>
+                      <li><a href="#">Our Service</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Affiliate Program</a></li>
+                      
+                    </ul>
+                  </div>
+        
+                  <!-- Get Help -->
+                  <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                      <li><a href="#">F.A.Q</a></li>
+                      <li><a href="#">Shipping</a></li>
+                      <li><a href="#">Returns</a></li>
+                      <li><a href="#">Order Status</a></li>
+                    </ul>
+                  </div>
+        
+                  <!-- Payment, Shipping -->
+                  <div class="footer-col">
+                    <h4>Payment Options</h4>
+                    <ul class="pay-ship-logo">
+                      <li><img src="./images/visa.png" alt="visa" class="pay-ship"></li>
+                      <li><img src="./images/mastercard.png" alt="mastercard" class="pay-ship"></li>
+                      <li><img src="./images/momo.png" alt="momo" class="pay-ship"></li>
+                    </ul>
+                  </div>
+        
+                  <!-- Follow Us on -->
+                  <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                  </div>
+        
+                </div>
+              </div>
+              <!-- Copyright -->
+              <div class="copyright">
+                <span>&#169 2021 - Online Mall</span>
+              </div>
+
+        </footer>
+    </body>
+               
+            
+    
