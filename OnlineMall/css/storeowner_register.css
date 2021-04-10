@@ -250,7 +250,7 @@ main{
     padding: 10px 0px 10px 0px;
     text-align: center;
     border-radius: 10px 10px 0px 0px;
-    border: 2px black solid;
+    border: 1.5px black solid;
 }
 /* Form and main table */
 .main{
@@ -258,8 +258,7 @@ main{
     margin: auto;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
     border-radius: 0 0 10px 10px;
-    border: 2px black solid;
-}
+}   
 /* Form */
 form{
     padding: 20px;
