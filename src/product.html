@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <!-- Category Page CSS -->
+    <link rel="stylesheet" href="../css/product.css">
+    <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
+    <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <div class="wrapper">
+        <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+            <div class="logo"><img src="../images/logo.png" alt="mall.logo"></div>
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="#" class="desktop-link">Products</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Products</label>
+                    <ul>
+                        <li><a href="#">Search By Names</a></li>
+                        <li><a href="./product.html">Search By Categories</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Notification</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <!-- Cart -->
+            <div class="cart">
+                <a href="#">
+                <i class="fas fa-shopping-cart">
+                    <!-- number of product in cart -->
+                    <span class="num-cart-product">0</span>
+                </i>
+                </a>
+            </div>
+    
+            <!-- User-Account -->
+            <div class="user-account">
+                <a href="#"><i class="fas fa-user-circle"></i></a>
+            </div>
+            <!-- Search icon -->
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        </div>
+        <!-- Search Bar -->
+        <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+        </nav>
+      </div>        
+    </header>
+    
+    <!-- Body -->
+    <main>
+        <section class="products">
+            <div class="products-layout container">
+                <div class="col-1-of-4">
+                    <div>
+                        <div class="block-title">
+                        <h3>Category</h3>
+                        </div>
+            
+                        <ul class="block-content">
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                            <span>Shoes</span>
+                            <small>(10)</small>
+                            </label>
+                        </li>
+            
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                            <span>Bags</span>
+                            <small>(7)</small>
+                            </label>
+                        </li>
+            
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                            <span> Accessories</span>
+                            <small>(3)</small>
+                            </label>
+                        </li>
+            
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                            <span>Clothings</span>
+                            <small>(3)</small>
+                            </label>
+                        </li>
+                        </ul>
+                    </div>
+            
+                    <div>
+                        <div class="block-title">
+                        <h3>Brands</h3>
+                        </div>
+            
+                        <ul class="block-content">
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                <span>Gucci</span>
+                                <small>(10)</small>
+                                </label>
+                            </li>
+                
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                <span>Burberry</span>
+                                <small>(7)</small>
+                                </label>
+                            </li>
+                
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                <span> Accessories</span>
+                                <small>(3)</small>
+                                </label>
+                            </li>
+                
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                <span>Valentino</span>
+                                <small>(3)</small>
+                                </label>
+                            </li>
+                
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                <span>Dolce & Gabbana</span>
+                                <small>(3)</small>
+                                </label>
+                            </li>
+                
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                <span>Hogan</span>
+                                <small>(3)</small>
+                                </label>
+                            </li>
+                
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                <span>Moreschi</span>
+                                <small>(3)</small>
+                                </label>
+                            </li>
+                
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                <span>Givenchy</span>
+                                <small>(3)</small>
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-3-of-4">
+                    <form action="">
+                      <div class="item">
+                        <label for="sort-by">Sort By</label>
+                        <select name="sort-by" id="sort-by">
+                          <option value="title" selected="selected">Name</option>
+                          <option value="number">Price</option>
+                          <option value="search_api_relevance">Relevance</option>
+                          <option value="created">Newness</option>
+                        </select>
+                      </div>
+                      <a href="">Apply</a>
+                    </form>
+                
+    
+                    <!-- products -->
+                    <div class="product-container">
+
+                        <!-- porduct-box-1 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-2 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-3 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-4 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-5 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-6 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-7 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-8 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-9 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-10 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-11 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-12 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-13 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-14 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-15 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-16 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-17 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-18 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-19 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- porduct-box-20 -->
+                        <div class="product-box">
+                            <!-- product-img -->
+                            <div class="product-img">
+
+                                <!-- img -->
+                                <img src="../images/icon/T.V.jpg" alt="">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                    <span class="p-title">Title</span>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="footing">(10)</span>
+                                </div>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> đ</span>
+                                        <span class="price">149.000</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+                                            <span class="currency"> đ</span>
+                                            <span class="price">149.000</span>
+                                        </div>
+                                        <span class="discount-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                    </div>
+                    
+                    <div class="pagination-block">
+                        <ul class="pagination">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span class="icon">></span>
+                            <span class="last"> Last >></span>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+
+          <!-- Company  -->
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./term-of-service.html">Term of Service</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./return&refundpolicy.html">Return & Refund Policy</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+              
+            </ul>
+          </div>
+
+          <!-- Get Help -->
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="./faq.html">F.A.Q</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Sell Product ?</a></li>
+            </ul>
+          </div>
+
+          <!-- Payment, Shipping -->
+          <div class="footer-col">
+            <h4>Payment Options</h4>
+            <ul class="pay-ship-logo">
+              <li><img src="../images/visa.png" alt="visa" class="pay-ship"></li>
+              <li><img src="../images/mastercard.png" alt="mastercard" class="pay-ship"></li>
+              <li><img src="../images/momo.png" alt="momo" class="pay-ship"></li>
+            </ul>
+          </div>
+
+          <!-- Follow Us on -->
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="copyright">
+        <span>&#169 2021 - Online Mall. All right reserved</span>
+      </div>
+    </footer>
+
+
+    </body>
+</html>
