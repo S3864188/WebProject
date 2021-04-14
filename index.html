@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Mall</title>
+    <link rel="icon" href="./images/shop-icon.png">
     <!-- Mall CSS -->
-    <link rel="stylesheet" href="./css/edit.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
     <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
   </head>
@@ -12,208 +15,200 @@
   <body>
     <!-- Header -->
     <header>
-      <nav>
-        <!-- Bar Icon -->
-        <div class="menu-icon">
-          <span class="fas fa-bars"></span>
-        </div>
-        <!-- Logo -->
-        <div class="logo"><img src="./images/logo.png" alt="mall.logo"></div>
-
-        <!-- Navigation-items -->
-        <ul class="nav-items">
-          <div class="logo-mobile"><img src="./images/logo.png" alt="mall.logo"></div>
-          <div class="nav-icon cancel-icon-nav">
-            <span class="fas fa-times"></span>
-          </div>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">Associated Brand</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Seller Channel</a></li>
-          <!-- Social Media (Tablet, Mobile) -->
-          <div class="social-mobile">
-            <ul>
-              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <div class="wrapper">
+        <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+            <div class="logo"><img src="./images/logo.png" alt="mall.logo"></div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <a href="#" class="desktop-link">Products</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Products</label>
+                    <ul>
+                        <li><a href="#">Search By Names</a></li>
+                        <li><a href="./src/product.html">Search By Categories</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Notification</a></li>
             </ul>
-          </div>
-        </ul>
-
-        <!-- Icon (Tablet, Mobile) -->
-        <div class="search-icon">
-          <span class="fas fa-search"></span>
         </div>
-
-        <div class="nav-icon cancel-icon">
-          <span class="fas fa-times"></span>
-        </div>
-
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
+        
+        <div class="content">
+            <!-- Cart -->
+            <div class="cart">
+                <a href="#">
+                <i class="fas fa-shopping-cart">
+                    <!-- number of product in cart -->
+                    <span class="num-cart-product">0</span>
+                </i>
+                </a>
+            </div>
     
-        <div class="user-icon">
-          <span class="fas fa-user-circle"></span>
+            <!-- User-Account -->
+            <div class="user-account">
+                <a href="#"><i class="fas fa-user-circle"></i></a>
+            </div>
+            <!-- Search icon -->
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
         </div>
-
-        <!-- Search -->
-        <div class="search-box-wrapper">
-          <form action="#">
-            <input type="search" class="search-data" placeholder="Search..." required>
-            <button type="submit" class="fas fa-search"></button>
-          </form>
-        </div>
-
-        <!-- Cart -->
-        <div class="cart">
-          <a href="#">
-            <i class="fas fa-shopping-cart">
-              <!-- number of product in cart -->
-              <span class="num-cart-product">0</span>
-            </i>
-          </a>
-        </div>
-
-        <!-- User-Account -->
-        <div class="user-account">
-          <a href="#"><i class="fas fa-user-circle"></i></a>
-        </div>
-
-      </nav>
-      <script src="./js/responsive.js"></script>
+        <!-- Search Bar -->
+        <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+        </nav>
+      </div>      
     </header>
 
+
+
     <!-- Main -->
-    <main class="homepage">
+    <main>
       <!-- Heading Slider -->
-      <div id="advertisement">
-        <div class="home">
-          <div class="container">
-            <div class="slider">
-  
-              <div class="slide active">
-                <img src="./images/advertisement/1.jpg" style="width: 100%" alt="1">
-              </div>
-  
-              <div class="slide">
-                <img src="./images/advertisement/1.jpg" style="width: 100%" alt="2">
-              </div>
-  
-              <div class="slide">
-                <img src="./images/advertisement/1.jpg" style="width: 100%" alt="3">
-              </div>
-  
-              <div class="slide">
-                <img src="./images/advertisement/1.jpg" style="width: 100%" alt="4">
-              </div>
+      <section class="heading">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('./images/sale-off/microsoft-surface-laptop.jpg')">
+                <div class="container">
+                    <div class="caption ">
+                        <h1>1. Winter Collection 2020</h1>
+                        <p>Lorem ipsum dummy text goes here.</p>
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
             </div>
-          </div>
-  
-            <!-- controls buttons -->
-            <div class="controls">
-              <div class="prev"><</div>
-              <div class="next">></div>
+            <div class="slide" style="background-image: url('./images/sale-off/houseware.jpg ')">
+                <div class="container">
+                    <div class="caption">
+                        <h1>2. Winter Collection 2020</h1>
+                        <p>Lorem ipsum dummy text goes here.</p>
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
             </div>
-            <!-- Indicator -->
-            <div class="indicator"></div>
-          </div>
+            <div class="slide" style="background-image: url('images/slide-3.jpg')">
+                <div class="container">
+                    <div class="caption">
+                        <h1>3. Winter Collection 2020</h1>
+                        <p>Lorem ipsum dummy text goes here.</p>
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    
+        <!-- controls  -->
+        <div class="controls">
+            <div class="prev"><</div>
+            <div class="next">></div>
+        </div>
+
+        <!-- indicators -->
+        <div class="indicator">
+        </div>
+
+    </section>
         <!-- JavaScript link -->
         <script src="./js/app.js"></script>  
       </div>
 
+
+
       <!-- Collection -->
       <section class="collection">
-        <div class="collection-container">
+        <div class="inside">
+          <div class="collection-container">
 
-        <!-- collection-box-1 -->
-          <div class="collection-box">
-            <div class="c-header">
-              <!-- Header -->
-              <h2 class="header-text">Computer & Accessories</h2>
+          <!-- collection-box-1 -->
+            <div class="collection-box">
+              <div class="c-header">
+                <!-- Header -->
+                <h2 class="header-text">Computer & Accessories</h2>
+              </div>
+              <!-- Body -->
+              <div class="c-body">
+                <a href="#" class="c-link">
+                  <div class="body-image">
+                    <img src="./images/sale-off/macbook.jpg" alt="laptop">
+                  </div>
+                </a>
+              </div>
+              <!-- Footer -->
+              <div class="c-footer">
+                <a href="#" class="footer-link">Shop Now</a>
+              </div>
             </div>
-            <!-- Body -->
-            <div class="c-body">
-              <a href="#" class="c-link">
-                <div class="body-image">
-                  <img src="./images/sale-off/macbook.jpg" alt="laptop">
-                </div>
-              </a>
+
+            <!-- collection-box-2 -->
+            <div class="collection-box">
+              <div class="c-header">
+                <!-- Header -->
+                <h2 class="header-text">Computer & Accessories</h2>
+              </div>
+              <!-- Body -->
+              <div class="c-body">
+                <a href="#" class="c-link">
+                  <div class="body-image">
+                    <img src="./images/sale-off/macbook.jpg" alt="laptop">
+                  </div>
+                </a>
+              </div>
+              <!-- Footer -->
+              <div class="c-footer">
+                <a href="#" class="footer-link">Shop Now</a>
+              </div>
             </div>
-            <!-- Footer -->
-            <div class="c-footer">
-              <a href="#" class="footer-link">Shop Now</a>
+
+            <!-- collection-box-3 -->
+            <div class="collection-box">
+              <div class="c-header">
+                <!-- Header -->
+                <h2 class="header-text">Computer & Accessories</h2>
+              </div>
+              <!-- Body -->
+              <div class="c-body">
+                <a href="#" class="c-link">
+                  <div class="body-image">
+                    <img src="./images/sale-off/macbook.jpg" alt="laptop">
+                  </div>
+                </a>
+              </div>
+              <!-- Footer -->
+              <div class="c-footer">
+                <a href="#" class="footer-link">Shop Now</a>
+              </div>
             </div>
+
+            <!-- collection-box-4 -->
+            <div class="collection-box">
+              <div class="c-header">
+                <!-- Header -->
+                <h2 class="header-text">Computer & Accessories</h2>
+              </div>
+              <!-- Body -->
+              <div class="c-body">
+                <a href="#" class="c-link">
+                  <div class="body-image">
+                    <img src="./images/sale-off/macbook.jpg" alt="laptop">
+                  </div>
+                </a>
+              </div>
+              <!-- Footer -->
+              <div class="c-footer">
+                <a href="#" class="footer-link">See More</a>
+              </div>
+            </div>
+
           </div>
-
-          <!-- collection-box-2 -->
-          <div class="collection-box">
-            <div class="c-header">
-              <!-- Header -->
-              <h2 class="header-text">Computer & Accessories</h2>
-            </div>
-            <!-- Body -->
-            <div class="c-body">
-              <a href="#" class="c-link">
-                <div class="body-image">
-                  <img src="./images/sale-off/macbook.jpg" alt="laptop">
-                </div>
-              </a>
-            </div>
-            <!-- Footer -->
-            <div class="c-footer">
-              <a href="#" class="footer-link">Shop Now</a>
-            </div>
-          </div>
-
-           <!-- collection-box-3 -->
-           <div class="collection-box">
-            <div class="c-header">
-              <!-- Header -->
-              <h2 class="header-text">Computer & Accessories</h2>
-            </div>
-            <!-- Body -->
-            <div class="c-body">
-              <a href="#" class="c-link">
-                <div class="body-image">
-                  <img src="./images/sale-off/macbook.jpg" alt="laptop">
-                </div>
-              </a>
-            </div>
-            <!-- Footer -->
-            <div class="c-footer">
-              <a href="#" class="footer-link">Shop Now</a>
-            </div>
-          </div>
-
-           <!-- collection-box-4 -->
-           <div class="collection-box">
-            <div class="c-header">
-              <!-- Header -->
-              <h2 class="header-text">Computer & Accessories</h2>
-            </div>
-            <!-- Body -->
-            <div class="c-body">
-              <a href="#" class="c-link">
-                <div class="body-image">
-                  <img src="./images/sale-off/macbook.jpg" alt="laptop">
-                </div>
-              </a>
-            </div>
-            <!-- Footer -->
-            <div class="c-footer">
-              <a href="#" class="footer-link">See More</a>
-            </div>
-          </div>
-
         </div>
       </section>
 
       <!-- Feature Categories -->
-      <div class="feature-categories">
+      <section class="feature-categories">
         <!-- Heading -->
         <div class="categories-heading">
           <h2>Featured Categories</h2>
@@ -228,6 +223,7 @@
             </div>
             <span>Phone - Tablet</span>
           </li>
+
           <!-- Item 2 -->
           <li class="item">
             <div class="feature-box">
@@ -235,6 +231,7 @@
             </div>
             <span>Electronic</span>
           </li>
+
           <!-- Item 3 -->
           <li class="item">
             <div class="feature-box">
@@ -242,6 +239,7 @@
             </div>
             <span>Accessories - Digital Equipments</span>
           </li>
+
           <!-- Item 4 -->
           <li class="item">
             <div class="feature-box">
@@ -249,6 +247,7 @@
             </div>
             <span>Laptop - IT Equipments</span>
           </li>
+
           <!-- Item 5 -->
           <li class="item">
             <div class="feature-box">
@@ -256,6 +255,7 @@
             </div>
             <span>Camera - Video Recording</span>
           </li>
+
           <!-- Item 6 -->
           <li class="item">
             <div class="feature-box">
@@ -263,6 +263,7 @@
             </div>
             <span>Electric Appliances</span>
           </li>
+
           <!-- Item 7 -->
           <li class="item">
             <div class="feature-box">
@@ -270,12 +271,11 @@
             </div>
             <span>Houseware</span>
           </li>
-
         </ul>
         
         
 
-      </div>
+      </section>
 
       <!-- Mall -->
       <section class="mall-shop">
@@ -976,9 +976,10 @@
           <div class="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="#">About US</a></li>
-              <li><a href="#">Our Service</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="./src/about-us.html">About Us</a></li>
+              <li><a href="./src/term-of-service.html">Term of Service</a></li>
+              <li><a href="./src/privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./src/return&refundpolicy.html">Return & Refund Policy</a></li>
               <li><a href="#">Affiliate Program</a></li>
               
             </ul>
@@ -988,10 +989,11 @@
           <div class="footer-col">
             <h4>Get Help</h4>
             <ul>
-              <li><a href="#">F.A.Q</a></li>
+              <li><a href="./src/faq.html">F.A.Q</a></li>
               <li><a href="#">Shipping</a></li>
               <li><a href="#">Returns</a></li>
               <li><a href="#">Order Status</a></li>
+              <li><a href="#">Sell Product ?</a></li>
             </ul>
           </div>
 
@@ -1020,7 +1022,7 @@
       </div>
       <!-- Copyright -->
       <div class="copyright">
-        <span>&#169 2021 - Online Mall</span>
+        <span>&#169 2021 - Online Mall. All right reserved</span>
       </div>
     </footer>
 
