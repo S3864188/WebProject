@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- title -->
@@ -9,86 +10,62 @@
     <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
     <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-     <!-- Header -->
-     <header>
-        <nav>
-          <!-- Bar Icon -->
-          <div class="menu-icon">
-            <span class="fas fa-bars"></span>
-          </div>
-          <!-- Logo -->
-          <div class="logo"><img src="../images/logo.png" alt="mall.logo"></div>
-  
-          <!-- Navigation-items -->
-          <ul class="nav-items">
-            <div class="logo-mobile"><img src="../images/logo.png" alt="mall.logo"></div>
-            <div class="nav-icon cancel-icon-nav">
-              <span class="fas fa-times"></span>
-            </div>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Associated Brand</a></li>
-            <li><a href="#contact_us.html">Contact</a></li>
-            <li><a href="#">Seller Channel</a></li>
-            <!-- Social Media (Tablet, Mobile) -->
-            <div class="social-mobile">
-              <ul>
-                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </ul>
-  
-          <!-- Icon (Tablet, Mobile) -->
-          <div class="search-icon">
-            <span class="fas fa-search"></span>
-          </div>
-  
-          <div class="nav-icon cancel-icon">
-            <span class="fas fa-times"></span>
-          </div>
-  
-          <div class="cart-icon">
-            <span class="fas fa-shopping-cart"></span>
-          </div>
-      
-          <div class="user-icon">
-            <span class="fas fa-user-circle"></span>
-          </div>
-  
-          <!-- Search -->
-          <div class="search-box-wrapper">
-            <form action="#">
-              <input type="search" class="search-data" placeholder="Search..." required>
-              <button type="submit" class="fas fa-search"></button>
-            </form>
-          </div>
-  
-          <!-- Cart -->
-          <div class="cart">
-            <a href="#">
-              <i class="fas fa-shopping-cart">
-                <!-- number of product in cart -->
-                <span class="num-cart-product">0</span>
+    <!-- Header -->
+    <header>
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><img src="../images/logo.png" alt="mall.logo"></div>
+                    <ul class="links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li>
+                            <a href="#" class="desktop-link">Products</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Products</label>
+                            <ul>
+                                <li><a href="#">Search By Names</a></li>
+                                <li><a href="./src/product.html">Search By Categories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contact_us.html">Contact Us</a></li>
+                        <li><a href="#">Notification</a></li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <!-- Cart -->
+                    <div class="cart">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart">
+                  <!-- number of product in cart -->
+                  <span class="num-cart-product">0</span>
               </i>
-            </a>
-          </div>
-  
-          <!-- User-Account -->
-          <div class="user-account">
-            <a href="#"><i class="fas fa-user-circle"></i></a>
-          </div>
-  
-        </nav>
-        <script src="./js/responsive.js"></script>
-      </header>
+                        </a>
+                    </div>
+
+                    <!-- User-Account -->
+                    <div class="user-account">
+                        <a href="#"><i class="fas fa-user-circle"></i></a>
+                    </div>
+                    <!-- Search icon -->
+                    <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                </div>
+                <!-- Search Bar -->
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </div>
+    </header>
 
 
-      
-     <!-- Main screen Login-->   
+    <!-- Main screen Login-->
     <main>
         <div class="center">
             <!-- Title-->
@@ -116,64 +93,67 @@
             </form>
         </div>
     </main>
-  
-    
 
-     <!-- Footer -->
-     <footer class="footer" id="footer">
+
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
         <div class="container">
-          <div class="row">
-  
-            <!-- Company  -->
-            <div class="footer-col">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="#">About US</a></li>
-                <li><a href="#">Our Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Affiliate Program</a></li>
-                
-              </ul>
+            <div class="row">
+
+                <!-- Company  -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="./src/about-us.html">About Us</a></li>
+                        <li><a href="./src/term-of-service.html">Term of Service</a></li>
+                        <li><a href="./src/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="./src/return&refundpolicy.html">Return & Refund Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Get Help -->
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="./src/faq.html">F.A.Q</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Sell Product ?</a></li>
+                    </ul>
+                </div>
+
+                <!-- Payment, Shipping -->
+                <div class="footer-col">
+                    <h4>Payment Options</h4>
+                    <ul class="pay-ship-logo">
+                        <li><img src="../images/visa.png" alt="visa" class="pay-ship"></li>
+                        <li><img src="../images/mastercard.png" alt="mastercard" class="pay-ship"></li>
+                        <li><img src="../images/momo.png" alt="momo" class="pay-ship"></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us on -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                </div>
+
             </div>
-  
-            <!-- Get Help -->
-            <div class="footer-col">
-              <h4>Get Help</h4>
-              <ul>
-                <li><a href="#">F.A.Q</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Returns</a></li>
-                <li><a href="#">Order Status</a></li>
-              </ul>
-            </div>
-  
-            <!-- Payment, Shipping -->
-            <div class="footer-col">
-              <h4>Payment Options</h4>
-              <ul class="pay-ship-logo">
-                <li><img src="./images/visa.png" alt="visa" class="pay-ship"></li>
-                <li><img src="./images/mastercard.png" alt="mastercard" class="pay-ship"></li>
-                <li><img src="./images/momo.png" alt="momo" class="pay-ship"></li>
-              </ul>
-            </div>
-  
-            <!-- Follow Us on -->
-            <div class="footer-col">
-              <h4>Follow Us</h4>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-              
-            </div>
-  
-          </div>
         </div>
         <!-- Copyright -->
         <div class="copyright">
-          <span>&#169 2021 - Online Mall</span>
+            <span>&#169 2021 - Online Mall. All right reserved</span>
         </div>
-      </footer>
+    </footer>
 </body>
+
 </html>
