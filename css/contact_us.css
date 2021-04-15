@@ -584,6 +584,13 @@ button:focus {
     padding-left: 80px;
 }
 
+@media only screen and (max-width: 426px) {
+    /* Main page */
+    .main_wrapper {
+        width: 100%;
+    }
+}
+
 
 /* 
 ============
@@ -597,7 +604,7 @@ button:focus {
     background-color: #24262b;
     padding: 20px 0;
     width: 100%;
-    bottom: -40%;
+    bottom: -90%;
     left: 0;
 }
 
