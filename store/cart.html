@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap " rel="stylesheet ">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <!----store logo-->
+                <div class="logo">
+                    <a href="homestore1.html"><img src="images/logo/logo.png" width="200px"></a>
+                </div>
+                <!---dropdown menu using checkbox-->
+                <nav>
+                    <div class="menu">
+                        <label for="toggle-responsive" class="toggle-menu"><img src="images/logo/menu.png" width="30px" height="30px"></label>
+                        <input type="checkbox" id="toggle-responsive" />
+                        <ul class="nav level-one">
+                            <li><a href="homestore1.html">Home</a></li>
+
+                            <li class="parent">
+                                <label for="toggle-level-1-01" class="toggle">Products</label>
+                                <input type="checkbox" id="toggle-level-1-01" />
+                                <ul class="level-three">
+                                    <li>
+                                        <a href="BuyDate.html">By Date</a>
+                                    </li>
+                                    <li class="parent">
+                                        <label for="toggle-level-2-01" class="toggle">Catelogy</label>
+                                        <input type="checkbox" id="toggle-level-2-01" />
+                                        <ul class="level-four">
+                                            <li>
+                                                <a href="H.Moser.html">H.Moser & Cie</a>
+                                            </li>
+                                            <li>
+                                                <a href="H.Moser.html">Rolex</a>
+                                            </li>
+                                            <li>
+                                                <a href="H.Moser.html">Patek Philippe</a>
+                                            </li>
+                                            <li>
+                                                <a href="H.Moser.html">Hublot</a>
+                                            </li>
+                                            <li>
+                                                <a href="H.Moser.html">Jacob & Co</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../src/about-us.html">About Us</a></li>
+                            <li><a href="../src/contact_us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="cart-icon">
+                    <a href="cart.html"><img src="images/logo/cart.png" width="30px" height="30px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---cart items details-->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy/buy-1.png" alt="Richard Mille RM07-03 Marshmallow">
+                        <div>
+                            <p>Richard Mille RM07-03 Marshmallow (45.32)</p>
+                            <small>Price: $100000.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$100000.00</td>
+            </tr>
+
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$100000.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$110000.00</td>
+                </tr>
+            </table>
+        </div>
+        <a href="" class="checkout-btn">Check Out</a>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/logo/logo.png" alt="store logo">
+                    <!---Input-->
+                    <p>Since 2021</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="../src/faq.html">FAQ</a></li>
+                        <li><a href="../src/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../src/term-of-service.html">ToS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - LongTr</p>
+        </div>
+    </div>
+</body>
+
+</html>

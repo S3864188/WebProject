@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- title -->
-    <title>Login Form</title>
-    <!-- Css Link-->
-    <link rel="stylesheet" href="../css/login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profile</title>
+    <!-- Overall Policy CSS -->
+    <link rel="stylesheet" href="../css/userss.css">
     <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
     <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
 </head>
@@ -29,10 +30,10 @@
                             <label for="show-features">Products</label>
                             <ul>
                                 <li><a href="#">Search By Names</a></li>
-                                <li><a href="./src/product.html">Search By Categories</a></li>
+                                <li><a href="./product.html">Search By Categories</a></li>
                             </ul>
                         </li>
-                        <li><a href="./contact_us.html">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Notification</a></li>
                     </ul>
                 </div>
@@ -42,9 +43,9 @@
                     <div class="cart">
                         <a href="#">
                             <i class="fas fa-shopping-cart">
-                  <!-- number of product in cart -->
-                  <span class="num-cart-product">0</span>
-              </i>
+                      <!-- number of product in cart -->
+                      <span class="num-cart-product">0</span>
+                  </i>
                         </a>
                     </div>
 
@@ -62,39 +63,44 @@
                 </form>
             </nav>
         </div>
+
     </header>
 
+    <!-- Main -->
+    <!-- user account -->
+    <div class="titler">
+        <p>Your Profile</p>
+    </div>
+    <div class="profile-background">
+        <div class="profile-container">
+            <div class="profile-wrapper"><img class="profile-circle" src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.18169-9/14910295_559236277598899_999382489733537467_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=9ro-MOeap_QAX_1wUzh&_nc_ht=scontent.fsgn5-5.fna&oh=67a74435a92644cf2eee4cd2fe952e22&oe=609D5CFC"
+                />
+                <div class="profile-divider"></div>
+                <div class="profile-info">
+                    <h3>Hoang Bui</h3><small>(seller)</small>
+                </div>
+                <div class="profile-extras">
+                    <div class="detail">
+                        <p>Phone: 0912 999 999</p><br>
+                    </div>
+                    <div class="detail">
+                        <p>Email: this_is_an_email@yahoo.com</p><br>
+                    </div>
+                    <div class="detail">
+                        <p>Gender: Male</p><br>
+                    </div>
+                    <div class="detail">
+                        <p>Address: Nguyen Van A St. Le Van B Ditrict. , HN</p><br>
+                    </div>
 
-    <!-- Main screen Login-->
-    <main>
-        <div class="center">
-            <!-- Title-->
-            <h1>Login</h1>
-            <form method="POST">
-                <!-- Input user name and password-->
-                <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label> Username</label>
                 </div>
-                <div class="txt_field">
-                    <input type="password" required>
-                    <span></span>
-                    <label> Password</label>
-                </div>
-                <!-- Forgetpassword link-->
-                <div class="pass"><a href="forgetpassword.html">Forgot Password</a></div>
-                <!-- Submit button-->
-                <input class="submit" type="submit" value="Login">
-                <!-- Signup link-->
-                <div class="sigup_link">
-                    Not a member? <a href="registerscreen.html">Sign Up</a>
-                </div>
-            </form>
+            </div><a class="add-photo-cc" href="#"><i class="material-icons"></i>
+        <div class="add-photo-tooltip"></div></a>
         </div>
+    </div>
 
+    </div>
 
-    </main>
 
     <!-- Footer -->
     <footer class="footer" id="footer">
@@ -105,10 +111,10 @@
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="./src/about-us.html">About Us</a></li>
-                        <li><a href="./src/term-of-service.html">Term of Service</a></li>
-                        <li><a href="./src/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="./src/return&refundpolicy.html">Return & Refund Policy</a></li>
+                        <li><a href="./about-us.html">About Us</a></li>
+                        <li><a href="./term-of-service.html">Term of Service</a></li>
+                        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="./return&refundpolicy.html">Return & Refund Policy</a></li>
                         <li><a href="#">Affiliate Program</a></li>
 
                     </ul>
@@ -118,11 +124,10 @@
                 <div class="footer-col">
                     <h4>Get Help</h4>
                     <ul>
-                        <li><a href="./src/faq.html">F.A.Q</a></li>
+                        <li><a href="./faq.html">F.A.Q</a></li>
                         <li><a href="#">Shipping</a></li>
                         <li><a href="#">Returns</a></li>
                         <li><a href="#">Order Status</a></li>
-                        <li><a href="#">Sell Product ?</a></li>
                     </ul>
                 </div>
 
@@ -154,8 +159,6 @@
             <span>&#169 2021 - Online Mall. All right reserved</span>
         </div>
     </footer>
-
-
 </body>
 
 </html>
