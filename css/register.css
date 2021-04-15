@@ -501,7 +501,7 @@ form {
     top: -37px;
     line-height: 40px;
     border-radius: 6px;
-    padding: 0 22px;
+    width: 20%;
     font-size: 16px;
 }
 
@@ -511,7 +511,7 @@ form {
     top: -80px;
     line-height: 40px;
     border-radius: 6px;
-    padding: 0 15px;
+    width: 30%;
     font-size: 16px;
     color: #555;
 }
@@ -542,7 +542,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 530px;
+    width: 69%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -557,7 +557,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 98px;
+    width: 15%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -569,7 +569,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 348px;
+    width: 43%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -581,7 +581,7 @@ form {
     color: #E5E5E5;
     text-transform: capitalize;
     font-size: 16px;
-    left: 101px;
+    left: 90px;
     top: -1px;
 }
 
@@ -590,7 +590,7 @@ form {
     color: #E5E5E5;
     text-transform: capitalize;
     font-size: 16px;
-    left: -150px;
+    left: -130px;
     top: -1px;
 }
 
@@ -602,7 +602,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 530px;
+    width: 69%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -614,7 +614,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 530px;
+    width: 69%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -629,7 +629,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 530px;
+    width: 69%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -644,7 +644,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 250px;
+    width: 30%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -659,7 +659,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 80px;
+    width: 15%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -674,7 +674,7 @@ form {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 532px;
+    width: 69%;
     height: 40px;
     border-radius: 6px;
     padding: 0 22px;
@@ -785,7 +785,7 @@ input[type="checkbox"] {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 528px;
+    width: 69%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -800,7 +800,7 @@ input[type="checkbox"] {
     left: 200px;
     top: -37px;
     line-height: 40px;
-    width: 528px;
+    width: 69%;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
@@ -857,6 +857,20 @@ button:hover {
     background-color: #5390F5;
 }
 
+@media only screen and (max-width: 767px) {
+    /* colum main screen */
+    .name .firstname .lastname .email .code .number .password .retype_password .address .city .zipcode .option .business_name .store_name {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    /* colum main screen */
+    .name .firstname .lastname .email .code .number .password .retype_password .address .city .zipcode .option .business_name .store_name {
+        width: 100%;
+    }
+}
+
 
 /* 
 ============
@@ -870,7 +884,7 @@ button:hover {
     background-color: #24262b;
     padding: 20px 0;
     width: 100%;
-    bottom: -140%;
+    bottom: -200%;
     left: 0;
 }
 
