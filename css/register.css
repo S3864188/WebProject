@@ -1,456 +1,419 @@
 /* Google Font Montserrat*/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /* Google Font (Roboto 400). Link:https://fonts.google.com/specimen/Roboto?preview.text_type=custom */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* display background */
 
-
-/* Set up */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto', sans-serif;
 }
-
-a {
-    text-decoration: none;
+a{
+  text-decoration: none;
 }
-
-ul {
-    list-style: none;
+ul{
+  list-style: none;
 }
-
-html {
-    font-size: 89.5%;
+html{
+  font-size: 89.5%;
 }
-
-img {
-    max-width: 100%;
+img{
+  max-width: 100%;
 }
-
-body {
-    background: #f2f2f2;
+body{
+  background: #f2f2f2;
 }
-
-
 /*
 ============
 ===Header===
 ============ 
 */
 
-
 /* Navigation */
-
-.wrapper {
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    position: relative;
-    width: 100%;
-    z-index: 1000;
+.nav-wrapper{
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  position: relative;
+  width: 100%;
+  z-index: 1000;
 }
-
-.wrapper nav {
-    position: relative;
-    display: flex;
-    max-width: calc(100% - 200px);
-    margin: 0 auto;
-    height: 70px;
-    align-items: center;
-    justify-content: space-between;
+.nav-wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
 }
-
-nav .content {
-    display: flex;
-    align-items: center;
+nav .content{
+  display: flex;
+  align-items: center;
 }
-
-nav .content .links {
-    margin-left: 60px;
-    display: flex;
+nav .content .links{
+  margin-left: 60px;
+  display: flex;
 }
-
-.content .logo img {
-    color: #fff;
-    height: 50px;
-    margin: 0;
+.content .logo img{
+  color: #fff;
+  height: 20px;
+  margin: 0;
 }
-
-.content .links li {
-    list-style: none;
-    line-height: 70px;
+.content .links li{
+  list-style: none;
+  line-height: 70px;
 }
-
 .content .links li a,
-.content .links li label {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 9px 17px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
-
-.content .links li label {
-    display: none;
+.content .links li label{
+  display: none;
 }
-
 .content .links li a:hover,
-.content .links li label:hover {
-    background: #323c4e;
+.content .links li label:hover{
+  background: #323c4e;
 }
-
-.wrapper .search-icon,
-.wrapper .menu-icon {
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-    line-height: 70px;
-    width: 70px;
-    text-align: center;
+.nav-wrapper .search-icon,
+.nav-wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
 }
-
-.wrapper .menu-icon {
-    display: none;
+.nav-wrapper .menu-icon{
+  display: none;
 }
-
-.wrapper #show-search:checked~.search-icon i::before {
-    content: "\f00d";
+.nav-wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
 }
-
 
 /* Search Box */
-
-.wrapper .search-box {
-    position: absolute;
-    height: 100%;
-    max-width: calc(100% - 50px);
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
+.nav-wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
-
-.wrapper #show-search:checked~.search-box {
-    opacity: 1;
-    pointer-events: auto;
+.nav-wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
 }
-
-.search-box input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    color: #fff;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    padding: 0 100px 0 15px;
+.search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  padding: 0 100px 0 15px;
 }
-
-.search-box input::placeholder {
-    color: #f2f2f2;
+.search-box input::placeholder{
+  color: #f2f2f2;
 }
-
-.search-box .go-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    line-height: 60px;
-    width: 40px;
-    background: #171c24;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 30px;
-    cursor: pointer;
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 40px;
+  background: #171c24;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
 }
-
-.wrapper input[type="checkbox"] {
-    display: none;
+.nav-wrapper input[type="checkbox"]{
+  display: none;
 }
-
 
 /* Cart */
-
-.cart {
-    cursor: pointer;
-    display: flex;
-    padding-left: 5px;
-    margin: 0px 30px;
+.cart{
+  cursor: pointer;
+  display: flex;
+  padding-left: 5px;
+  margin: 0px 30px;
 }
 
-.cart i {
-    position: relative;
-    font-size: 25px;
-    color: #fff;
+.cart i{
+  position: relative;
+  font-size: 25px;
+  color: #fff;
 }
 
-.cart .num-cart-product {
-    position: absolute;
-    bottom: 18px;
-    left: 18px;
-    width: 20px;
-    height: 20px;
-    font-size: 0.8rem;
-    border-radius: 50%;
-    background-color: #0b9d8a;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
+.cart .num-cart-product{
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  background-color: #0b9d8a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
 }
-
 
 /* User-Account */
-
-.user-account {
-    cursor: pointer;
-    display: flex;
-    padding-left: 5px;
-    margin: 0px 10px;
+.user-account{
+  cursor: pointer;
+  display: flex;
+  padding-left: 5px;
+  margin: 0px 10px;
+}
+.user-account i{
+  font-size: 25px;
+  color: #fff;
 }
 
-.user-account i {
-    font-size: 25px;
-    color: #fff;
-}
 
 
 /* Dropdown Menu */
-
-.content .links ul {
-    position: absolute;
-    background: #171c24;
-    top: 80px;
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
+.content .links ul{
+  position: absolute;
+  background: #171c24;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
 }
-
-.content .links li:hover>ul {
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
 }
-
-.content .links ul li a {
-    display: block;
-    width: 100%;
-    line-height: 30px;
-    border-radius: 0px!important;
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
 }
-
-.content .links ul ul {
-    position: absolute;
-    top: 0;
-    right: calc(-100% + 8px);
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
 }
-
-.content .links ul li {
-    position: relative;
+.content .links ul li{
+  position: relative;
 }
-
-.content .links ul li:hover ul {
-    top: 0;
+.content .links ul li:hover ul{
+  top: 0;
 }
-
 
 /* Responsive */
-
-@media only screen and (max-width: 1250px) {
-    .wrapper nav {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-    nav .content .links {
-        margin-left: 30px;
-    }
-    .content .links li a {
-        padding: 8px 13px;
-    }
-    .wrapper .search-box {
-        max-width: calc(100% - 100px);
-    }
-    .wrapper .search-box input {
-        padding: 0 100px 0 15px;
-    }
+@media only screen and (max-width: 1250px){
+  .nav-wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .nav-wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .nav-wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .wrapper .menu-icon {
-        display: block;
-    }
-    .wrapper #show-menu:checked~.menu-icon i::before {
-        content: "\f00d";
-    }
-    nav .content .links {
-        display: block;
-        position: fixed;
-        background: #14181f;
-        height: 100%;
-        width: 100%;
-        top: 70px;
-        left: -100%;
-        margin-left: 0;
-        max-width: 350px;
-        overflow-y: auto;
-        padding-bottom: 100px;
-        transition: all 0.3s ease;
-    }
-    nav #show-menu:checked~.content .links {
-        left: 0%;
-    }
-    .content .links li {
-        margin: 15px 20px;
-    }
-    .content .links li a,
-    .content .links li label {
-        line-height: 40px;
-        font-size: 20px;
-        display: block;
-        padding: 8px 18px;
-        cursor: pointer;
-    }
-    .content .links li a.desktop-link {
-        display: none;
-    }
-    /* dropdown responsive*/
-    .content .links ul,
-    .content .links ul ul {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        background: none;
-        max-height: 0px;
-        overflow: hidden;
-    }
-    .content .links #show-features:checked~ul {
-        max-height: 100vh;
-    }
-    .content .links ul li {
-        margin: 7px 20px;
-    }
-    .content .links ul li a {
-        font-size: 18px;
-        line-height: 30px;
-        border-radius: 5px!important;
-    }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .nav-wrapper .menu-icon{
+    display: block;
+  }
+  .nav-wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive*/
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
 }
 
-@media only screen and (max-width: 767px) {
-    .wrapper nav {
-        padding: 0 10px;
-    }
-    .content .logo img {
-        color: #fff;
-        height: 20px;
-        margin: 0;
-    }
-    .wrapper .search-box {
-        max-width: calc(100% - 70px);
-    }
-    .wrapper .search-box .go-icon {
-        width: 30px;
-        right: 0;
-    }
-    .wrapper .search-box input {
-        padding-right: 30px;
-    }
-    .wrapper .menu-icon {
-        display: block;
-    }
-    .wrapper #show-menu:checked~.menu-icon i::before {
-        content: "\f00d";
-    }
-    nav .content .links {
-        display: block;
-        position: fixed;
-        background: #14181f;
-        height: 100%;
-        width: 100%;
-        top: 70px;
-        left: -100%;
-        margin-left: 0;
-        max-width: 350px;
-        overflow-y: auto;
-        padding-bottom: 100px;
-        transition: all 0.3s ease;
-    }
-    nav #show-menu:checked~.content .links {
-        left: 0%;
-    }
-    .content .links li {
-        margin: 15px 20px;
-    }
-    .content .links li a,
-    .content .links li label {
-        line-height: 40px;
-        font-size: 20px;
-        display: block;
-        padding: 8px 18px;
-        cursor: pointer;
-    }
-    .content .links li a.desktop-link {
-        display: none;
-    }
-    /* dropdown responsive*/
-    .content .links ul,
-    .content .links ul ul {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        background: none;
-        max-height: 0px;
-        overflow: hidden;
-    }
-    .content .links #show-features:checked~ul {
-        max-height: 100vh;
-    }
-    .content .links ul li {
-        margin: 7px 20px;
-    }
-    .content .links ul li a {
-        font-size: 18px;
-        line-height: 30px;
-        border-radius: 5px!important;
-    }
+@media only screen and (max-width: 767px){
+  .nav-wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo img{
+    color: #fff;
+    height: 16px;
+    margin: 0;
+  }
+  .nav-wrapper .search-box{
+    max-width: calc(100% - 70px);
+  }
+  .nav-wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .nav-wrapper .search-box input{
+    padding-right: 30px;
+  }
+
+  .nav-wrapper .menu-icon{
+    display: block;
+  }
+  .nav-wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive*/
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
 }
 
 
 /*
-  ============
-  ===Main===
-  ============ 
-  */
+============
+===Main===
+============ 
+*/
 
-main {
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 18%;
-    width: 100%;
+.registration-form{
+	overflow: hidden;
+  margin-bottom: 50px;
 }
-
+.main {
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  max-width: 800px;
+  width: 100%;
+}
 
 /* Title  */
 
 .regform {
-    font-size: 18px;
-    width: 800px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    margin: auto;
-    color: black;
-    padding: 10px 0px 10px 0px;
-    text-align: center;
-    border-radius: 10px 10px 0px 0px;
-    border: 1.5px black solid;
+  font-size: 18px;
+  width: 100%;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  margin: auto;
+  color: black;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+  border: 1.5px black solid;
 }
 
 
@@ -462,265 +425,12 @@ main {
     border-radius: 0 0 10px 10px;
 }
 
-.main {
-    width: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 /* Form */
-
-form {
+.registration-info {
     padding: 20px;
-}
-
-#name {
     width: 100%;
-    height: 60px;
 }
-
-
-/* Main form for the the register form */
-
-.name {
-    margin-left: 25px;
-    margin-top: 30px;
-    color: black;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-
-/* Input first name, last name, and their label bellow */
-
-.firstname {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    border-radius: 6px;
-    width: 20%;
-    font-size: 16px;
-}
-
-.lastname {
-    position: relative;
-    left: 410px;
-    top: -80px;
-    line-height: 40px;
-    border-radius: 6px;
-    width: 30%;
-    font-size: 16px;
-    color: #555;
-}
-
-.firstlabel {
-    position: relative;
-    color: #E5E5E5;
-    text-transform: capitalize;
-    font-size: 16px;
-    left: 203px;
-    top: -45px;
-}
-
-.lastlabel {
-    position: relative;
-    color: #E5E5E5;
-    text-transform: capitalize;
-    font-size: 16px;
-    left: 185px;
-    top: -45px;
-}
-
-
-/* Input email */
-
-.email {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 69%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
-
-
-/* input area code, phone number and their label bellow */
-
-.code {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 15%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
-
-.number {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 43%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
-
-.area-code {
-    position: relative;
-    color: #E5E5E5;
-    text-transform: capitalize;
-    font-size: 16px;
-    left: 90px;
-    top: -1px;
-}
-
-.phone-number {
-    position: relative;
-    color: #E5E5E5;
-    text-transform: capitalize;
-    font-size: 16px;
-    left: -130px;
-    top: -1px;
-}
-
-
-/* input password and retype password */
-
-.password {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 69%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
-
-.retype_password {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 69%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
-
-
-/* input address */
-
-.address {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 69%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
-
-
-/* input city */
-
-.city {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 30%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
-
-
-/* input zipcode */
-
-.zipcode {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 15%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
-
-
-/* Display dropdown select */
-
-.option {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 69%;
-    height: 40px;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-    outline: none;
-    overflow: hidden;
-}
-
-
-/* font letter */
-
-#account {
-    margin-left: 25px;
-    color: black;
-    font-size: 18px;
-}
-
-#questionate {
-    margin-left: 25px;
-    color: black;
-    font-size: 18px;
-    text-align: center;
-}
-
-
-/* radio display */
-
-.radio {
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-    padding-right: 150px;
-    font-size: 18px;
-    margin-left: 80px;
-    margin-top: 15px;
-    color: black;
-}
-
-.radio input {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    outline: none;
-}
-
 
 /* display profile img */
 
@@ -764,23 +474,249 @@ img {
 }
 
 
-/* FOR STORE OWNER FORM*/
-
-input[type="checkbox"] {
-    position: absolute;
+/* Main form for the the register form */
+.info .name{
+    margin-left: 25px;
+    margin-top: 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.title {
-    margin-left: 25px;
-    color: black;
+
+/* Input first name, last name, and their label bellow */
+
+.firstname {
+    position: relative;
+    left: 25%;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    width: 20%;
     font-size: 16px;
+}
+
+.lastname {
+    position: relative;
+    left: 54%;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    width: 30%;
+    font-size: 16px;
+    color: #555;
+}
+
+.firstlabel {
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: 25%;
+    top: -45px;
+}
+
+.lastlabel {
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: 24%;
+    top: -45px;
+}
+
+
+/* Input email */
+
+.email {
+    position: relative;
+    left: 25%;
+    top: -37px;
+    line-height: 40px;
+    width: 70%;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* input area code, phone number and their label bellow */
+
+.code {
+    position: relative;
+    left: 25%;
+    top: -37px;
+    line-height: 40px;
+    width: 15%;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.number {
+    position: relative;
+    left: 25%;
+    top: -37px;
+    line-height: 40px;
+    width: 44%;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.area-code {
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: 10%;
+    top: -1px;
+}
+
+.phone-number {
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 16px;
+    right: 19%;
+    top: -1px;
+}
+
+
+/* input password and retype password */
+
+.password {
+    position: relative;
+    left: 25%;
+    bottom: 37px;
+    line-height: 40px;
+    width: 69%;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.retype_password {
+    position: relative;
+    left: 25%;
+    bottom: 37px;
+    line-height: 40px;
+    width: 69%;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* input address */
+
+.address {
+    position: relative;
+    left: 25%;
+    bottom: 37px;
+    line-height: 40px;
+    width: 69%;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* input city */
+
+.city {
+    position: relative;
+    left: 25%;
+    bottom: 37px;
+    line-height: 40px;
+    width: 30%;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* input zipcode */
+
+.zipcode {
+    position: relative;
+    left: 25%;
+    bottom: 37px;
+    line-height: 40px;
+    width: 15%;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Display dropdown select */
+
+.option {
+    position: relative;
+    left: 25%;
+    bottom: 37px;
+    line-height: 40px;
+    width: 70%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    overflow: hidden;
+}
+/* radio display */
+
+.radio {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding-right: 150px;
+    font-size: 18px;
+    margin-left: 80px;
+    margin-top: 15px;
+    color: black;
+    user-select: none;
+}
+
+.radio .radio-one {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+
+}
+
+#reps{
+    display: none;
+}
+
+#store-own:checked ~ #reps{
+    display: block;
+}
+
+
+/* FOR STORE OWNER FORM*/
+
+#questionate {
+    margin: 20px 12px 0 0;
+    color: black;
+    font-size: 18px;
     text-align: center;
 }
 
+/* input business, store name */
 
-/* input business name */
-
-.business_name {
+.business_name, .store_name {
     position: relative;
     left: 200px;
     top: -37px;
@@ -792,83 +728,77 @@ input[type="checkbox"] {
     color: #555;
 }
 
-
-/* input store name */
-
-.store_name {
-    position: relative;
-    left: 200px;
-    top: -37px;
-    line-height: 40px;
-    width: 69%;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
+.store-category{
+    margin-left: 60px;
 }
-
 
 /* change link color letter */
+.link{
+  color: blue; 
+}
 
-a {
-    color: blue;
+.link:hover{
+  color: royalblue;
 }
 
 
 /* register button */
 
-button {
+.buttons {
     background-color: #3BAF9F;
-    display: block;
-    margin: 20px 0px 0px 20px;
-    text-align: center;
-    border-radius: 12px;
-    border: 2px solid #366473;
-    padding: 14px 110px;
+    margin: 20px 0;
+    border-radius: 5px;
     outline: none;
     color: white;
     cursor: pointer;
-    transition: 0.25px;
-}
-
-button:hover {
-    background-color: #5390F5;
-}
-
-
-/* reset button */
-
-.reset {
-    float: left;
-    background-color: #3BAF9F;
-    display: block;
-    margin: 20px 160px 0px 20px;
+    transition: all 0.1 ease;
+    border: none;
+    padding: 15px 32px;
     text-align: center;
-    border-radius: 12px;
-    border: 2px solid #366473;
-    padding: 14px 110px;
-    outline: none;
-    color: white;
-    cursor: pointer;
-    transition: 0.25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
-.reset:hover {
+.register{
+    float: right;
+}
+.buttons:hover {
     background-color: #5390F5;
 }
 
-@media only screen and (max-width: 767px) {
-    /* colum main screen */
-    .name .firstname .lastname .email .code .number .password .retype_password .address .city .zipcode .option .business_name .store_name {
-        width: 100%;
+/* Selection */
+
+#account {
+    margin: 10px 0 0 25px;
+    color: black;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px){
+    .info .name{
+        font-size: 13px;
+    }
+
+    .retype_password{
+        left: 30%;
     }
 }
 
-@media only screen and (max-width: 426px) {
-    /* colum main screen */
-    .name .firstname .lastname .email .code .number .password .retype_password .address .city .zipcode .option .business_name .store_name {
-        width: 100%;
-    }
+.signin_link {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+.signin_link a {
+  color: white;
+  text-decoration: none;
+}
+
+.signin_link a:hover {
+  text-decoration: underline;
 }
 
 
@@ -884,7 +814,6 @@ button:hover {
     background-color: #24262b;
     padding: 20px 0;
     width: 100%;
-    bottom: -200%;
     left: 0;
 }
 
