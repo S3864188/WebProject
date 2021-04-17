@@ -1,229 +1,266 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <!-- title -->
-        <title> Responsive Registration Form </title>
-        <!-- Css Link-->
-        <link rel="stylesheet" href="../css/register.css">
-        <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
-        <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
-    </head>
-        
-    <body>
-           <!-- Header -->
-     <header>
-        <nav>
-          <!-- Bar Icon -->
-          <div class="menu-icon">
-            <span class="fas fa-bars"></span>
-          </div>
-          <!-- Logo -->
-          <div class="logo"><img src="../images/logo.png" alt="mall.logo"></div>
-  
-          <!-- Navigation-items -->
-          <ul class="nav-items">
-            <div class="logo-mobile"><img src="../images/logo.png" alt="mall.logo"></div>
-            <div class="nav-icon cancel-icon-nav">
-              <span class="fas fa-times"></span>
-            </div>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Associated Brand</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Seller Channel</a></li>
-            <!-- Social Media (Tablet, Mobile) -->
-            <div class="social-mobile">
-              <ul>
-                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </ul>
-  
-          <!-- Icon (Tablet, Mobile) -->
-          <div class="search-icon">
-            <span class="fas fa-search"></span>
-          </div>
-  
-          <div class="nav-icon cancel-icon">
-            <span class="fas fa-times"></span>
-          </div>
-  
-          <div class="cart-icon">
-            <span class="fas fa-shopping-cart"></span>
-          </div>
-      
-          <div class="user-icon">
-            <span class="fas fa-user-circle"></span>
-          </div>
-  
-          <!-- Search -->
-          <div class="search-box-wrapper">
-            <form action="#">
-              <input type="search" class="search-data" placeholder="Search..." required>
-              <button type="submit" class="fas fa-search"></button>
-            </form>
-          </div>
-  
-          <!-- Cart -->
-          <div class="cart">
-            <a href="#">
-              <i class="fas fa-shopping-cart">
-                <!-- number of product in cart -->
-                <span class="num-cart-product">0</span>
-              </i>
-            </a>
-          </div>
-  
-          <!-- User-Account -->
-          <div class="user-account">
-            <a href="#"><i class="fas fa-user-circle"></i></a>
-          </div>
-  
-        </nav>
-        <script src="./js/responsive.js"></script>
-      </header>
-        
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title> Responsive Registration Form </title>
+    <!-- Css Link-->
+    <link rel="stylesheet" href="../css/register.css">
+    <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
+    <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
+</head>
 
-         <!-- Main register-->
-         <main>
-            <div class="regform"><h1>Registration Form</h1></div>
-            <div class="main">
-                <form> 
-                    <!--Create a picture area and input photo from folder-->
-                    <div class="profile-pic">
-                        <img src="../images/avatar/image.jpg" id="photo" >
-                        <input type="file" id="file">
-                        <label for="file" id="uploadBtn">Choose Photo</label>
-                    </div>
-                    <div>
-                        <!-- making label for user input their full name -->
-                        <div id="name">
-                            <h2 class="name">Name</h2>
-                            <input class="firstname" type="rext" name="first_name"><br>
-                            <label class="firstlabel">first name</label>
-                            <input class="lastname" type="text" name="last_name">
-                            <label class="lastlabel">last name</label>
-                        </div>
-                        <!--making label for user input their email -->
-                        <h2 class="name">Email</h2>
-                        <input class="email" type="text" name="email">
-                        <!-- making label for user input their phone number-->
-                        <h2 class="name">Phone</h2>
-                        <input class="code" type="text" name="area_code">
-                        <label class="area-code">Area Code</label>
-                        <input class="number" type="text" name="phone">
-                        <label class="phone-number">Phone Number</label>
-                        <!--making label for user input their password and retype a new created password -->
-                        <h2 class="name">Password</h2>
-                        <input class="password" type="password" name="password">
-        
-                        <h2 class="name">Retype Password</h2>
-                        <input class="retype_password" type="password" name="retype_password">
-                        <!--making label for user input their address -->
-                        <h2 class="name">Address</h2>
-                        <input class="address" type="text" name="address">
-                        <!--making label for user input their address -->
-                        <h2 class="name">City</h2>
-                        <input class="city" type="text" name="city">
-                        <!--making label for user input their address's zipcode in max leght of 6 -->
-                        <h2 class="name">Zipcode</h2>
-                        <input class="zipcode" type="text" maxlength="6">
-                        <!--making label for user input their country -->
-                        <h2 class="name">Country</h2>
-                        <select class="option" name="option" >
-                            <option disabled="disabled" selected="selected">--Choose your country Digit Codes--</option>
-                            <option value="Vietnam">VN-Vietnam</option>
-                            <option value="Singapore">SG-Singapore</option>
-                            <option value="United State">US-United State</option>
-                        </select>
-                        <!--Place for user select which type of account their want to create -->
-                        <h2 id="account">Choose your Account type</h2>
-                        <label class="radio">
-                            <input class="radio-one" type="radio" name="account_type" value="store_owner">
-                            <label for="store_owner">Store Owner</label>
-                            <br>
-                            <input class="radio-one" type="radio" name="account_type" value="Shopper">
-                            <label for="shopper">Shopper</label>
-                        </label><br><br>
-                        <!--giving announce about privacy policy-->
-                        <h2 id="account">By continuing, you agree to Online Mall's <a href="">Privacy Policy</a>.</h2>
-    
-                    </div> 
-                    
-    
-                    <!--Button to submit the register form -->
-                    <input class="button" type="submit" value="Submit">
-                    
-                
-                </form>
-            </div>
-
-         </main>
-        
-         
-     <!-- Footer -->
-     <footer class="footer" id="footer">
-        <div class="container">
-          <div class="row">
-  
-            <!-- Company  -->
-            <div class="footer-col">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="#">About US</a></li>
-                <li><a href="#">Our Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Affiliate Program</a></li>
-                
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-wrapper">
+          <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+              <div class="logo"><img src="../images/logo.png" alt="mall.logo"></div>
+              <ul class="links">
+                  <li><a href="../index.html">Home</a></li>
+                  <li>
+                      <a href="#" class="desktop-link">Products</a>
+                      <input type="checkbox" id="show-features">
+                      <label for="show-features">Products</label>
+                      <ul>
+                          <li><a href="./productbyName.html">Search By Names</a></li>
+                          <li><a href="./product.html">Search By Categories</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="./contact_us.html">Contact Us</a></li>
+                  <li><a href="./fee-page.html">Pricing</a></li>
               </ul>
-            </div>
-  
-            <!-- Get Help -->
-            <div class="footer-col">
-              <h4>Get Help</h4>
-              <ul>
-                <li><a href="#">F.A.Q</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Returns</a></li>
-                <li><a href="#">Order Status</a></li>
-              </ul>
-            </div>
-  
-            <!-- Payment, Shipping -->
-            <div class="footer-col">
-              <h4>Payment Options</h4>
-              <ul class="pay-ship-logo">
-                <li><img src="./images/visa.png" alt="visa" class="pay-ship"></li>
-                <li><img src="./images/mastercard.png" alt="mastercard" class="pay-ship"></li>
-                <li><img src="./images/momo.png" alt="momo" class="pay-ship"></li>
-              </ul>
-            </div>
-  
-            <!-- Follow Us on -->
-            <div class="footer-col">
-              <h4>Follow Us</h4>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          
+          <div class="content">
+              <!-- Cart -->
+              <div class="cart">
+                  <a href="./cart.html">
+                  <i class="fas fa-shopping-cart">
+                      <!-- number of product in cart -->
+                      <span class="num-cart-product">0</span>
+                  </i>
+                  </a>
               </div>
-              
-            </div>
-  
+      
+              <!-- User-Account -->
+              <div class="user-account">
+                  <a href="./login.html"><i class="fas fa-user-circle"></i></a>
+              </div>
+              <!-- Search icon -->
+              <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
           </div>
+          <!-- Search Bar -->
+          <form action="#" class="search-box">
+              <input type="text" placeholder="Type Something to Search..." required>
+              <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+          </nav>
+      </div>
+          
+    </header>
+
+
+
+    <!-- Main register-->
+    <main>
+        <div class="registration-form">
+            <div class="main">
+                <div class="regform">
+                    <h1>Registration Form</h1>
+                </div>
+                <div class="inside">
+                    <form class="registration-info">
+                        <!--Create a picture area and input photo from folder-->
+                        <div class="profile-pic">
+                            <img src="../images/avatar/image.jpg" id="photo">
+                            <input type="file" id="file">
+                            <label for="file" id="uploadBtn">Choose Photo</label>
+                        </div>
+                        <div class="info">
+
+                            <!-- making label for user input their full name -->
+                            <div id="name">
+                                <h2 class="name">Name</h2>
+                                <input class="firstname" type="rext" name="first_name"><br>
+                                <label class="firstlabel">first name</label>
+                                <input class="lastname" type="text" name="last_name">
+                                <label class="lastlabel">last name</label>
+                            </div>
+
+                            <!--making label for user input their email -->
+                            <h2 class="name">Email</h2>
+                            <input class="email" type="text" name="email">
+
+                            <!-- making label for user input their phone number-->
+                            <h2 class="name">Phone</h2>
+                            <input class="code" type="text" name="area_code">
+                            <label class="area-code">Area Code</label>
+                            <input class="number" type="text" name="phone">
+                            <label class="phone-number">Phone Number</label>
+
+                            <!--making label for user input their password and retype a new created password -->
+                            <h2 class="name">Password</h2>
+                            <input class="password" type="password" name="password">
+                            <h2 class="name">Retype Password</h2>
+                            <input class="retype_password" type="password" name="retype_password">
+
+                            <!--making label for user input their address -->
+                            <h2 class="name">Address</h2>
+                            <input class="address" type="text" name="address">
+
+                            <!--making label for user input their address -->
+                            <h2 class="name">City</h2>
+                            <input class="city" type="text" name="city">
+
+                            <!--making label for user input their address's zipcode in max leght of 6 -->
+                            <h2 class="name">Zipcode</h2>
+                            <input class="zipcode" type="text" maxlength="6">
+
+                            <!--making label for user input their country -->
+                            <h2 class="name">Country</h2>
+                            <select class="option" name="option">
+                                <option disabled="disabled" selected="selected">--Choose your country Digit Codes--</option>
+                                <option value="Vietnam">VN-Vietnam</option>
+                                <option value="Singapore">SG-Singapore</option>
+                                <option value="United State">US-United State</option>
+                            </select>
+
+                            <!--Place for user select which type of account their want to create -->
+                            <h2 id="account">Choose your Account type</h2>
+                            <div class="shopper">
+                                <label class="radio" for="Shopper">
+                                    <input class="radio-one" type="radio" checked="checked" name="account_type" value="Shopper">Shopper
+                                </label>
+                            </div>
+                            <div class="store-owner">
+                                <label class="radio"for="store_owne">
+                                    <input class="radio-one" id="store-own" type="radio" name="account_type" value="store_owne">Store Owner
+                                    <!-- Store Form -->
+                                    <div class="store_owner_form" id="reps">
+                                        <h2 id="questionate">Register Form (For Store Owner Account Only)</h2><br>
+                                        <h2 class="name">Business Name</h2>
+                                        <input class="business_name" type="text" name="business_name">
+
+                                        <!--Store Name-->
+                                        <h2 class="name">Store Name</h2>
+                                        <input class="store_name" type="text" name="store_name">
+
+                                        <!--Store Category-->
+                                        <h2 class="name">Store Category</h2>
+                                        <select class="option store-category" name="category_option">
+                                            <option disabled="disabled" selected="selected">--Choose your Store Category Option--</option>
+                                            <option value="department_stores">Department Stores</option>
+                                            <option value="grocery_stores">Grocery Stores</option>
+                                            <option value="restaurants">Restaurants</option>
+                                            <option value="clothing_stores">Clothing Stores</option>
+                                            <option value="accessory_stores">Accessory Stores</option>
+                                            <option value="pharmacies">Pharmacies</option>
+                                            <option value="technology_stores">Technology Stores</option>
+                                            <option value="pet_stores">Pet Stores</option>
+                                            <option value="toy_stores">Toy Stores</option>
+                                            <option value="specialty_stores"> Specialty Stores</option>
+                                            <option value="thrift_stores">Thrift Stores</option>
+                                            <option value="services">Services</option>
+                                            <option value="kiosks">Kiosks</option>
+                                        </select>
+                                    </div>
+                                    
+                                </label>
+                            </div>
+
+
+                            
+
+                            <!--giving announce about privacy policy-->
+                            <h2 id="account">By continuing, you agree to Online Mall's <a href="./privacy-policy.html" class="link">Privacy Policy</a>.</h2>
+
+                        </div>
+                        <!--Button to reset the register form-->
+                            <button class="buttons reset" type="reset" value="Reset"><p>Reset</p></button>
+                       
+                        <!--Button to submit the register form -->
+                            <a href="./user-account.html"><button class="buttons register" type="submit"><p>Register</p></button></a>
+
+                            <div class="signin_link">
+                                Already have an account? <a href="./login.html">Login</a>
+                            </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- Company  -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="./about-us.html">About Us</a></li>
+                        <li><a href="./term-of-service.html">Term of Service</a></li>
+                        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="./return&refundpolicy.html">Return & Refund Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Get Help -->
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="./faq.html">F.A.Q</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Sell Product ?</a></li>
+                    </ul>
+                </div>
+
+                <!-- Payment, Shipping -->
+                <div class="footer-col">
+                    <h4>Payment Options</h4>
+                    <ul class="pay-ship-logo">
+                        <li><img src="../images/visa.png" alt="visa" class="pay-ship"></li>
+                        <li><img src="../images/mastercard.png" alt="mastercard" class="pay-ship"></li>
+                        <li><img src="../images/momo.png" alt="momo" class="pay-ship"></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us on -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
         <!-- Copyright -->
         <div class="copyright">
-          <span>&#169 2021 - Online Mall</span>
+            <span>&#169 2021 - Online Mall. All right reserved</span>
         </div>
-      </footer>
-     
-        
-         
-    </body>
+    </footer>
+
+
+
+</body>
+
 </html>
