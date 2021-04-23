@@ -18,129 +18,132 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="wrapper">
-            <nav>
-                <input type="checkbox" id="show-search">
-                <input type="checkbox" id="show-menu">
-                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-                <div class="content">
-                    <div class="logo"><img src="../images/logo.png" alt="mall.logo"></div>
-                    <ul class="links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li>
-                            <a href="#" class="desktop-link">Products</a>
-                            <input type="checkbox" id="show-features">
-                            <label for="show-features">Products</label>
-                            <ul>
-                                <li><a href="#">Search By Names</a></li>
-                                <li><a href="./src/product.html">Search By Categories</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./contact_us.html">Contact Us</a></li>
-                        <li><a href="#">Notification</a></li>
-                    </ul>
-                </div>
-
-                <div class="content">
-                    <!-- Cart -->
-                    <div class="cart">
-                        <a href="#">
-                            <i class="fas fa-shopping-cart">
+        <div class="nav-wrapper">
+          <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+              <div class="logo"><img src="../images/logo.png" alt="mall.logo"></div>
+              <ul class="links">
+                  <li><a href="../index.html">Home</a></li>
+                  <li>
+                      <a href="#" class="desktop-link">Products</a>
+                      <input type="checkbox" id="show-features">
+                      <label for="show-features">Products</label>
+                      <ul>
+                          <li><a href="./productbyName.html">Search By Names</a></li>
+                          <li><a href="./product.html">Search By Categories</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="./contact_us.html">Contact Us</a></li>
+                  <li><a href="./fee-page.html">Pricing</a></li>
+              </ul>
+          </div>
+          
+          <div class="content">
+              <!-- Cart -->
+              <div class="cart">
+                  <a href="./cart.html">
+                  <i class="fas fa-shopping-cart">
                       <!-- number of product in cart -->
                       <span class="num-cart-product">0</span>
                   </i>
-                        </a>
-                    </div>
-
-                    <!-- User-Account -->
-                    <div class="user-account">
-                        <a href="#"><i class="fas fa-user-circle"></i></a>
-                    </div>
-                    <!-- Search icon -->
-                    <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-                </div>
-                <!-- Search Bar -->
-                <form action="#" class="search-box">
-                    <input type="text" placeholder="Type Something to Search..." required>
-                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
-            </nav>
-        </div>
+                  </a>
+              </div>
+      
+              <!-- User-Account -->
+              <div class="user-account">
+                  <a href="./login.html"><i class="fas fa-user-circle"></i></a>
+              </div>
+              <!-- Search icon -->
+              <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          </div>
+          <!-- Search Bar -->
+          <form action="#" class="search-box">
+              <input type="text" placeholder="Type Something to Search..." required>
+              <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+          </nav>
+      </div>
+          
     </header>
 
 
     <!-- Main -->
     <!-- Main screen Contact-->
     <main>
-        <div class="main_wrapper">
-            <!-- Title -->
-            <h2>Contact Us</h2>
-            <form action="#" method="POST">
-                <!-- Input Full name of user -->
-                <div class="input-group">
-                    <div class="input-box">
-                        <label>First Name</label>
-                        <input type="text" required class="name">
-                        <i class="fa fa-user"></i>
-                    </div>
-                    <div class="input-box">
-                        <label> Last name</label>
-                        <input type="text" required class="name">
-                        <i class="fa fa-user"></i>
-                    </div>
-                </div>
-                <!-- Email and Phone number -->
-                <div class="input-group">
-                    <div class="input-box">
-                        <label>Email</label>
-                        <input type="email" required class="name">
-                        <i class="fa fa-envelope"></i>
-                    </div>
-                    <div class="input-box">
-                        <label>Mobile No</label>
-                        <input type="tel" required class="name">
-                        <i class="fa fa-phone"></i>
-                    </div>
-                </div>
-
-                <!-- Contact days  -->
-                <div class="contact">
-                    <div class="">
-                        <i class="fa fa-calendar "> </i>
-                        <label>Contact days: </label>
-                        <div class="checkbox">
-                            <input type="checkbox" name="day1" value="Monday">
-                            <label for="day1"> Monday</label><br>
-                            <input type="checkbox" name="day2" value="	Tuesday">
-                            <label for="day2"> Tuesday</label><br>
-                            <input type="checkbox" name="day3" value="Wednesday">
-                            <label for="day3"> Wednesday</label><br>
-                            <input type="checkbox" name="day4" value="Thursday">
-                            <label for="day4"> Thursday</label><br>
-                            <input type="checkbox" name="day5" value="	Friday">
-                            <label for="day5"> 	Friday</label><br>
-                            <input type="checkbox" name="day6" value="	Saturday">
-                            <label for="day6"> 	Saturday</label><br>
-                            <input type="checkbox" name="day7" value="	Sunday">
-                            <label for="day7"> 	Sunday</label><br>
+        <div class="contact_wrapper">
+            <div class="contact-container">
+                <!-- Title -->
+                <h2>Contact Us</h2>
+                <form action="#" method="POST">
+                    <!-- Input Full name of user -->
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label>First Name</label>
+                            <input type="text" required class="name">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <label> Last name</label>
+                            <input type="text" required class="name">
+                            <i class="fa fa-user"></i>
                         </div>
                     </div>
-                </div>
-                <!-- Message  -->
-                <div class="input-group ">
-                    <div class="input-box comm ">
-                        <label>Comments or Message</label>
-                        <textarea cols="46 " rows="3 " placeholder="Write Your Message here ! " class="name "></textarea>
-                        <i class="fa fa-comment "></i>
+                    <!-- Email and Phone number -->
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label>Email</label>
+                            <input type="email" required class="name">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="input-box">
+                            <label>Mobile No</label>
+                            <input type="tel" required class="name">
+                            <i class="fa fa-phone"></i>
+                        </div>
                     </div>
-                </div>
-                <!-- Submit button -->
-                <div class="button-group ">
-                    <div class="button-box ">
-                        <button type="submit "><i class="fa fa-paper-plane "></i> Send Message</button>
+
+                    <!-- Contact days  -->
+                    <div class="contact">
+                        <div class="">
+                            <i class="fa fa-calendar "> </i>
+                            <label>Contact days: </label>
+                            <div class="checkbox">
+                                <input type="checkbox" name="day1" value="Monday">
+                                <label for="day1"> Monday</label><br>
+                                <input type="checkbox" name="day2" value="	Tuesday">
+                                <label for="day2"> Tuesday</label><br>
+                                <input type="checkbox" name="day3" value="Wednesday">
+                                <label for="day3"> Wednesday</label><br>
+                                <input type="checkbox" name="day4" value="Thursday">
+                                <label for="day4"> Thursday</label><br>
+                                <input type="checkbox" name="day5" value="	Friday">
+                                <label for="day5"> 	Friday</label><br>
+                                <input type="checkbox" name="day6" value="	Saturday">
+                                <label for="day6"> 	Saturday</label><br>
+                                <input type="checkbox" name="day7" value="	Sunday">
+                                <label for="day7"> 	Sunday</label><br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </form>
+                    <!-- Message  -->
+                    <div class="input-group ">
+                        <div class="input-box comm ">
+                            <label>Comments or Message</label>
+                            <textarea cols="46 " rows="3 " placeholder="Write Your Message here ! " class="name "></textarea>
+                            <i class="fa fa-comment "></i>
+                        </div>
+                    </div>
+                    <!-- Submit button -->
+                    <div class="button-group ">
+                        <div class="button-box ">
+                            <button type="submit "><i class="fa fa-paper-plane "></i> Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
@@ -155,10 +158,10 @@
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="./src/about-us.html">About Us</a></li>
-                        <li><a href="./src/term-of-service.html">Term of Service</a></li>
-                        <li><a href="./src/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="./src/return&refundpolicy.html">Return & Refund Policy</a></li>
+                        <li><a href="../src/about-us.html">About Us</a></li>
+                        <li><a href="../src/term-of-service.html">Term of Service</a></li>
+                        <li><a href="../src/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../src/return&refundpolicy.html">Return & Refund Policy</a></li>
                         <li><a href="#">Affiliate Program</a></li>
 
                     </ul>
@@ -168,7 +171,7 @@
                 <div class="footer-col">
                     <h4>Get Help</h4>
                     <ul>
-                        <li><a href="./src/faq.html">F.A.Q</a></li>
+                        <li><a href="../src/faq.html">F.A.Q</a></li>
                         <li><a href="#">Shipping</a></li>
                         <li><a href="#">Returns</a></li>
                         <li><a href="#">Order Status</a></li>

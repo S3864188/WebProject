@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap " rel="stylesheet ">
+
+</head>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <!----store logo-->
+            <div class="logo">
+                <a href="homestore1.html"><img src="images/logo/logo.png" width="200px"></a>
+            </div>
+            <!---dropdown menu using checkbox-->
+            <nav>
+                <div class="menu">
+                    <label for="toggle-responsive" class="toggle-menu"><img src="images/logo/menu.png" width="30px" height="30px"></label>
+                    <input type="checkbox" id="toggle-responsive" />
+                    <ul class="nav level-one">
+                        <li><a href="../../index.html">Mall</a></li>
+                        <li><a href="homestore1.html">Home</a></li>
+
+                        <li class="parent">
+                            <label for="toggle-level-1-01" class="toggle">Products</label>
+                            <input type="checkbox" id="toggle-level-1-01" />
+                            <ul class="level-three">
+                                <li>
+                                    <a href="BuyDate.html">By Date</a>
+                                </li>
+                                <li class="parent">
+                                    <label for="toggle-level-2-01" class="toggle">Catelogy</label>
+                                    <input type="checkbox" id="toggle-level-2-01" />
+                                    <ul class="level-four">
+                                        <li>
+                                            <a href="H.Moser.html">H.Moser & Cie</a>
+                                        </li>
+                                        <li>
+                                            <a href="H.Moser.html">Rolex</a>
+                                        </li>
+                                        <li>
+                                            <a href="H.Moser.html">Patek Philippe</a>
+                                        </li>
+                                        <li>
+                                            <a href="H.Moser.html">Hublot</a>
+                                        </li>
+                                        <li>
+                                            <a href="H.Moser.html">Jacob & Co</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../src/about-us.html">About Us</a></li>
+                        <li><a href="../src/contact_us.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cart-icon">
+                <a href="../cart.html"><img src="images/logo/cart.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+    <!-----single product details--->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/gallery/gallery-1.jpg" width="100%" id="ProductImg">
+            </div>
+            <div class="col-2">
+                <!---Input-->
+                <p>Richard Mille</p>
+                <h1>Richard Mille RM07-03 Marshmallow</h1>
+                <h4>$100000.00</h4>
+                <select>
+                    <option>Select Size</option> <!---Input-->
+                    <option>45.32mm</option>
+                </select>
+                <input type="number" value="1">
+                <a href="../cart.html" class="btn">Add To Cart</a>
+
+                <!---Input-->
+                <h3>Product Details</h3>
+                <p>Ceramic case</p>
+                <p>Self-Winding Mecanical</p>
+                <p>Power Reserve: 50h</p>
+            </div>
+            <!---addition img product detail-->
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery/gallery-2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery/gallery-3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery/gallery-4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-----title-->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Product</h2>
+            <p>View More</p>
+        </div>
+
+    </div>
+
+    <div class="small-container">
+
+        <div class="row">
+            <h2 class="title">Featured products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="product-detail3.html"><img src="images/product/product-6.png">
+                        <h4>H.Moser & Cie APL FE</h4>
+                    </a>
+                    <p>$100000.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="product-detail3.html"><img src="images/product/product-7.png">
+                        <h4>Jacob & Co Pioneer</h4>
+                        <p>$40000.00</p>
+                </div>
+                </a>
+                <div class="col-4">
+                    <a href="product-detail3.html"><img src="images/product/product-8.png">
+                        <h4>Rolex Submariner Batman edition</h4>
+                        <p>$15000.00</p>
+                </div>
+                </a>
+                <div class="col-4">
+                    <a href="product-detail3.html"><img src="images/product/product-9.png">
+                        <h4>Rolex GMT Pepsi edition</h4>
+                        <p>$18000.00</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/logo/logo.png">
+                    <!---Input-->
+                    <p>Since 2021</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="../src/faq.html">FAQ</a></li>
+                        <li><a href="../src/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../src/term-of-service.html">ToS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - LongTr</p>
+        </div>
+    </div>
+</body>
+
+</html>
