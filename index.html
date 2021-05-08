@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,1039 +9,1556 @@
     <link rel="icon" href="./images/shop-icon.png">
     <!-- Mall CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Cookie Section CSS -->
+    <link rel="stylesheet" href="./css/cookie.css">
     <!-- FontAwesome Icon. Link: https://fontawesome.com. -->
     <script src="https://kit.fontawesome.com/da0f099ad2.js" crossorigin="anonymous"></script>
-  </head>
-  
-  <body>
+</head>
+
+<body>
+    <!-- Cookies -->
+    <section class="cookie">
+        <div class="cookie-container">
+            <p>
+                We use cookies in this website to give you the best experience on our site and show you relevant ads. To find out more, read our
+                <a href="./src/privacy-policy.html">privacy policy</a> and <a href="./src/cookie-policy.html">cookie policy</a>.
+            </p>
+
+            <button class="cookie-btn">I understand</button>
+            <a href="#" class="learnmore">Learn More</a>
+        </div>
+        <script src="./js/cookie.js"></script>
+    </section>
+    
     <!-- Header -->
     <header>
-      <div class="nav-wrapper">
-        <nav>
-        <input type="checkbox" id="show-search">
-        <input type="checkbox" id="show-menu">
-        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <div class="content">
-            <div class="logo"><img src="./images/logo.png" alt="mall.logo"></div>
-            <ul class="links">
-                <li><a href="./index.html">Home</a></li>
-                <li>
-                    <a href="#" class="desktop-link">Products</a>
-                    <input type="checkbox" id="show-features">
-                    <label for="show-features">Products</label>
-                    <ul>
-                        <li><a href="./src/productbyName.html">Search By Names</a></li>
-                        <li><a href="./src/product.html">Search By Categories</a></li>
+        <div class="nav-wrapper">
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><img src="./images/logo.png" alt="mall.logo"></div>
+                    <ul class="links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li>
+                            <a href="#" class="desktop-link">Products</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Products</label>
+                            <ul>
+                                <li><a href="./src/productbyName.html">Search By Names</a></li>
+                                <li><a href="./src/product.html">Search By Categories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./src/contact_us.html">Contact Us</a></li>
+                        <li><a href="./src/fee-page.html">Pricing</a></li>
                     </ul>
-                </li>
-                <li><a href="./src/contact_us.html">Contact Us</a></li>
-                <li><a href="./src/fee-page.html">Pricing</a></li>
-            </ul>
-        </div>
-        
-        <div class="content">
-            <!-- Cart -->
-            <div class="cart">
-                <a href="./src/cart.html">
-                <i class="fas fa-shopping-cart">
+                </div>
+
+                <div class="content">
+                    <!-- Cart -->
+                    <div class="cart">
+                        <a href="./src/store/cart.html">
+                            <i class="fas fa-shopping-cart">
                     <!-- number of product in cart -->
                     <span class="num-cart-product">0</span>
                 </i>
-                </a>
-            </div>
-    
-            <!-- User-Account -->
-            <div class="user-account">
-                <a href="./src/login.html"><i class="fas fa-user-circle"></i></a>
-            </div>
-            <!-- Search icon -->
-            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-        </div>
-        <!-- Search Bar -->
-        <form action="#" class="search-box">
-            <input type="text" placeholder="Type Something to Search..." required>
-            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-        </form>
-        </nav>
-      </div>      
-    </header>
+                        </a>
+                    </div>
 
+                    <!-- User-Account -->
+                    <div class="user-account">
+                        <a href="./src/login.html"><i class="fas fa-user-circle"></i></a>
+                    </div>
+                    <!-- Search icon -->
+                    <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                </div>
+                <!-- Search Bar -->
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </div>
+    </header>
 
 
     <!-- Main -->
     <main>
-      <!-- Heading Slider -->
-      <section class="heading">
-        <div class="slider">
-            <div class="slide active" style="background-image: url('./images/advertisement/microsoft-surface-laptop.jpg')">
-                <div class="container">
-                    <div class="caption ">
-                        <h1>1. New Arrival Laptop 2021</h1>
-                        <p>Come see the new laptops that will be arriving this year.</p>
-                        <a href="">See More</a>
+        <!-- Heading Slider -->
+        <section class="heading">
+            <div class="slider">
+                <div class="slide active" style="background-image: url('./images/advertisement/microsoft-surface-laptop.jpg')">
+                    <div class="container">
+                        <div class="caption ">
+                            <h1>1. New Arrival Laptop 2021</h1>
+                            <p>Come see the new laptops that will be arriving this year.</p>
+                            <a href="">See More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="slide" style="background-image: url('./images/advertisement/houseware.jpg ')">
-                <div class="container">
-                    <div class="caption">
-                        <h1>2. Houseware in your daily life</h1>
-                        <p>Discover household appliances and essential family items.</p>
-                        <a href="">Shop Now</a>
+                <div class="slide" style="background-image: url('./images/advertisement/houseware.jpg ')">
+                    <div class="container">
+                        <div class="caption">
+                            <h1>2. Houseware in your daily life</h1>
+                            <p>Discover household appliances and essential family items.</p>
+                            <a href="">Shop Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="slide" style="background-image: url('./images/advertisement/watch.jpg')">
-                <div class="container">
-                    <div class="caption">
-                        <h1>3. "Watches speak of your personality"</h1>
-                        <p>Discover the world's finest design watches </p>
-                        <a href="">Shop Now</a>
+                <div class="slide" style="background-image: url('./images/advertisement/watch.jpg')">
+                    <div class="container">
+                        <div class="caption">
+                            <h1>3. "Watches speak of your personality"</h1>
+                            <p>Discover the world's finest design watches </p>
+                            <a href="">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" style="background-image: url('./images/advertisement/shoes.jpg')">
+                    <div class="container">
+                        <div class="caption">
+                            <h1>4. Smooth miles for all</h1>
+                            <p>Discover our large range from adidas, Asics, Saucony & more now! </p>
+                            <a href="">Shop Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="slide" style="background-image: url('./images/advertisement/shoes.jpg')">
-              <div class="container">
-                  <div class="caption">
-                      <h1>4. Smooth miles for all</h1>
-                      <p>Discover our large range from adidas, Asics, Saucony & more now! </p>
-                      <a href="">Shop Now</a>
-                  </div>
-              </div>
-          </div>
-        </div>
-    
-        <!-- controls  -->
-        <div class="controls">
-            <div class="prev"><</div>
-            <div class="next">></div>
-        </div>
+            <!-- controls  -->
+            <div class="controls">
+                <div class="prev">
+                    <</div>
+                        <div class="next">></div>
+                </div>
 
-        <!-- indicators -->
-        <div class="indicator">
-        </div>
+                <!-- indicators -->
+                <div class="indicator">
+                </div>
 
-    </section>
+        </section>
         <!-- JavaScript Slider Link -->
-        <script src="./js/app.js"></script>  
-      </div>
+        <script src="./js/heading-slider.js"></script>
+        </div>
+
+        <!-- Collection -->
+        <section class="collection">
+            <div class="inside">
+                <div class="collection-container">
+
+                    <!-- collection-box-1 -->
+                    <div class="collection-box">
+                        <div class="c-header">
+                            <!-- Header -->
+                            <h2 class="header-text">Computer & Accessories</h2>
+                        </div>
+                        <!-- Body -->
+                        <div class="c-body">
+                            <a href="#" class="c-link">
+                                <div class="body-image">
+                                    <img src="./images/stuff/laptop-asus.jpg" alt="laptop">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Footer -->
+                        <div class="c-footer">
+                            <a href="#" class="footer-link">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <!-- collection-box-2 -->
+                    <div class="collection-box">
+                        <div class="c-header">
+                            <!-- Header -->
+                            <h2 class="header-text">Toys for Kids</h2>
+                        </div>
+                        <!-- Body -->
+                        <div class="c-body">
+                            <a href="#" class="c-link">
+                                <div class="body-image">
+                                    <img src="./images/stuff/toys.jpg" alt="toys">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Footer -->
+                        <div class="c-footer">
+                            <a href="#" class="footer-link">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <!-- collection-box-3 -->
+                    <div class="collection-box">
+                        <div class="c-header">
+                            <!-- Header -->
+                            <h2 class="header-text">Sport & Outdoor</h2>
+                        </div>
+                        <!-- Body -->
+                        <div class="c-body">
+                            <a href="#" class="c-link">
+                                <div class="body-image">
+                                    <img src="./images/stuff/sport-outdoor.jpg" alt="sport">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Footer -->
+                        <div class="c-footer">
+                            <a href="#" class="footer-link">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <!-- collection-box-4 -->
+                    <div class="collection-box">
+                        <div class="c-header">
+                            <!-- Header -->
+                            <h2 class="header-text">Beauty Picks</h2>
+                        </div>
+                        <!-- Body -->
+                        <div class="c-body">
+                            <a href="#" class="c-link">
+                                <div class="body-image">
+                                    <img src="./images/stuff/beauty.jpg" alt="beauty">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Footer -->
+                        <div class="c-footer">
+                            <a href="#" class="footer-link">See More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Categories -->
+        <section class="feature-categories">
+            <!-- Heading -->
+            <div class="categories-heading">
+                <h2>Featured Categories</h2>
+            </div>
+
+            <!-- Box -->
+            <ul class="container">
+                <!-- Item 1 -->
+                <li class="item">
+                    <div class="feature-box">
+                        <a href="#"><img src="./images/stuff/tablet.jpg" alt="tablet"></a>
+                    </div>
+                    <span>Phone - Tablet</span>
+                </li>
+
+                <!-- Item 2 -->
+                <li class="item">
+                    <div class="feature-box">
+                        <a href="#"><img src="./images/stuff/electronic.jpg" alt="electronic"></a>
+                    </div>
+                    <span>Electronic</span>
+                </li>
+
+                <!-- Item 3 -->
+                <li class="item">
+                    <div class="feature-box">
+                        <a href="#"><img src="./images/stuff/headphone.jpg" alt="headphone"></a>
+                    </div>
+                    <span>Accessories - Digital Equipments</span>
+                </li>
+
+                <!-- Item 4 -->
+                <li class="item">
+                    <div class="feature-box">
+                        <a href="#"><img src="./images/stuff/macbook.jpg" alt=""></a>
+                    </div>
+                    <span>Laptop - IT Equipments</span>
+                </li>
+
+                <!-- Item 5 -->
+                <li class="item">
+                    <div class="feature-box">
+                        <a href="#"><img src="./images/stuff/camera.jpg" alt=""></a>
+                    </div>
+                    <span>Camera - Video Recording</span>
+                </li>
+
+                <!-- Item 6 -->
+                <li class="item">
+                    <div class="feature-box">
+                        <a href="#"><img src="./images/stuff/appliances.jpg" alt="appliances"></a>
+                    </div>
+                    <span>Electric Appliances</span>
+                </li>
+
+                <!-- Item 7 -->
+                <li class="item">
+                    <div class="feature-box">
+                        <a href="#"><img src="./images/stuff/houseware.png" alt="houseware"></a>
+                    </div>
+                    <span>Houseware</span>
+                </li>
+            </ul>
 
 
 
-      <!-- Collection -->
-      <section class="collection">
-        <div class="inside">
-          <div class="collection-container">
+        </section>
 
-          <!-- collection-box-1 -->
-            <div class="collection-box">
-              <div class="c-header">
-                <!-- Header -->
-                <h2 class="header-text">Computer & Accessories</h2>
-              </div>
-              <!-- Body -->
-              <div class="c-body">
-                <a href="#" class="c-link">
-                  <div class="body-image">
-                    <img src="./images/stuff/laptop-asus.jpg" alt="laptop">
-                  </div>
+        <!-- New Product -->
+        <section class="new-product">
+            <div class="new-heading">
+                <h2>New Product</h2>
+            </div>
+
+            <div class="new-slide-container">
+                <section class="new-container" id="slider1">
+                    <!-- Product 1 -->
+                    <div class="thumbnail-box-1">
+                        <a href="./src/store/product-detail3.html">
+                            <div class="product-img">
+                                <!-- img -->
+                                <img src="./src/store/images/gallery/gallery-1.jpg" alt="product-1">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                <span class="p-title">Richard Mille RM07-03 Marshmallow</span>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> &#36 </span>
+                                        <span class="price">100000.00</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="thumbnail-box-1">
+                        <a href="./src/store/product-detail4.html">
+                            <div class="product-img">
+                                <!-- img -->
+                                <img src="./src/store/images/gallery/gallery-5.png" alt="product-1">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                <span class="p-title">H. Moser & Cie SWISS ALP WATCH</span>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> &#36 </span>
+                                        <span class="price">300000.00</span>
+                                    </div>
+                                    <div class="price-second-line">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="thumbnail-box-1">
+                        <a href="./src/store/iphone.html">
+                            <div class="product-img">
+                                <!-- img -->
+                                <img src="./src/store/img/iphone12promax/iphone-12-promax-1.jpg" alt="product-1">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                <span class="p-title">Iphone 12 Pro Max 128GB</span>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> &#36 </span>
+                                        <span class="price">1099.00</span>
+                                    </div>
+                                    <div class="price-second-line">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="thumbnail-box-1">
+                        <a href="./src/store/laptop.html">
+                            <div class="product-img">
+                                <!-- img -->
+                                <img src="./src/store/img/laptop/msi_1.jpg" alt="product-1">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                <span class="p-title">MSI Alpha 17 Gaming Laptop</span>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> &#36 </span>
+                                        <span class="price">1214.10</span>
+                                    </div>
+                                    <div class="price-second-line">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="thumbnail-box-1">
+                        <a href="./src/store/product-detail3.html">
+                            <div class="product-img">
+                                <!-- img -->
+                                <img src="./src/store/images/gallery/gallery-1.jpg" alt="product-1">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                <span class="p-title">Richard Mille RM07-03 Marshmallow</span>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> &#36 </span>
+                                        <span class="price">100000.00</span>
+                                    </div>
+                                    <div class="price-second-line">
+                                        <div class="price-text">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="thumbnail-box-1">
+                        <a href="./src/store/product-detail4.html">
+                            <div class="product-img">
+                                <!-- img -->
+                                <img src="./src/store/images/gallery/gallery-5.png" alt="product-1">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                <span class="p-title">H. Moser & Cie SWISS ALP WATCH</span>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> &#36 </span>
+                                        <span class="price">300000.00</span>
+                                    </div>
+                                    <div class="price-second-line">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="thumbnail-box-1">
+                        <a href="./src/store/iphone.html">
+                            <div class="product-img">
+                                <!-- img -->
+                                <img src="./src/store/img/iphone12promax/iphone-12-promax-1.jpg" alt="product-1">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                <span class="p-title">Iphone 12 Pro Max 128GB</span>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> &#36 </span>
+                                        <span class="price">1099.00</span>
+                                    </div>
+                                    <div class="price-second-line">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="thumbnail-box-1">
+                        <a href="./src/store/laptop.html">
+                            <div class="product-img">
+                                <!-- img -->
+                                <img src="./src/store/img/laptop/msi_1.jpg" alt="product-1">
+                            </div>
+                            <!-- details -->
+                            <div class="product-details">
+                                <div class="p-segment"></div>
+                                <span class="p-title">MSI Alpha 17 Gaming Laptop</span>
+                                <div class="p-price">
+                                    <div class="price-first-line">
+                                        <span class="currency"> &#36 </span>
+                                        <span class="price">1214.10</span>
+                                    </div>
+                                    <div class="price-second-line">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <div class="control">
+                    <div class="slide-left" id="slide-left-1">
+                        <</div>
+                            <div class="slide-right" id="slide-right-1">></div>
+                    </div>
+
+                </div>
+                <script src="./js/product-slider-product.js"></script>
+
+        </section>
+
+        <!-- New Store -->
+        <section class="new-store">
+            <div class="new-heading">
+                <h2>New Store</h2>
+            </div>
+            <div class="new-slide-container">
+                <section class="new-container" id="slider2">
+                    <a href="./src/store/homestore1.html">
+                        <!-- Store 1 -->
+                        <div class="thumbnail-box-2">
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+                    <!-- Store 2 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+                    <!-- Store 3 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 4 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 5 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 6 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 7 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 8 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 9 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 10 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 11 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 12 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+                    <!-- Store 13 -->
+                    <a href="./src/store/homestore1.html">
+                        <div class="thumbnail-box-2">
+
+                            <!-- shop-overlay -->
+                            <div class="s-overlay"></div>
+                            <!-- shop-img -->
+                            <div class="s-img">
+                                <img src="./src/store/images/category/category-1.jpg" alt="apple-store">
+                            </div>
+                            <!-- shop-icon -->
+                            <div class="s-icon">
+                                <img src="./src/store/images/logo/logo.png" alt="apple-logo">
+                            </div>
+                            <!-- shop details -->
+                            <div class="s-name">LongTr & Co</div>
+                            <p class="s-name-p">LongTr & Co</p>
+                        </div>
+                    </a>
+
+
+
+
+                </section>
+                <div class="control">
+                    <div class="slide-left" id="slide-left-2">
+                        <</div>
+                            <div class="slide-right" id="slide-right-2">></div>
+                    </div>
+                    <script src="./js/product-slider-store.js"></script>
+                </div>
+        </section>
+
+        <!-- Feature Store -->
+        <section class="mall-shop">
+            <!-- Heading -->
+            <div class="shop-heading">
+                <h2>Feature Store</h2>
+            </div>
+
+            <!-- products -->
+            <div class="shop-container">
+
+                <!-- shop-box-1 -->
+                <a href="./src/store/homestore1.html">
+                    <div class="shop-box">
+                        <!-- shop-overlay -->
+                        <div class="s-overlay"></div>
+                        <!-- shop-img -->
+                        <div class="s-img">
+                            <img src="./src/store/images/category/category-3.jpg" alt="longtr&co-store">
+                        </div>
+                        <!-- shop-icon -->
+                        <div class="s-icon">
+                            <img src="./src/store/images/logo/logo.png" alt="longtr&co-logo">
+                        </div>
+                        <!-- shop details -->
+                        <div class="s-name">LongTr & Co</div>
+                        <p class="s-name-p">LongTr & Co</p>
+                        <p class="s-name-p">(Currently Available)</p>
+                    </div>
                 </a>
-              </div>
-              <!-- Footer -->
-              <div class="c-footer">
-                <a href="#" class="footer-link">Shop Now</a>
-              </div>
-            </div>
 
-            <!-- collection-box-2 -->
-            <div class="collection-box">
-              <div class="c-header">
-                <!-- Header -->
-                <h2 class="header-text">Toys for Kids</h2>
-              </div>
-              <!-- Body -->
-              <div class="c-body">
-                <a href="#" class="c-link">
-                  <div class="body-image">
-                    <img src="./images/stuff/toys.jpg" alt="toys">
-                  </div>
-                </a>
-              </div>
-              <!-- Footer -->
-              <div class="c-footer">
-                <a href="#" class="footer-link">Shop Now</a>
-              </div>
-            </div>
-
-            <!-- collection-box-3 -->
-            <div class="collection-box">
-              <div class="c-header">
-                <!-- Header -->
-                <h2 class="header-text">Sport & Outdoor</h2>
-              </div>
-              <!-- Body -->
-              <div class="c-body">
-                <a href="#" class="c-link">
-                  <div class="body-image">
-                    <img src="./images/stuff/sport-outdoor.jpg" alt="sport">
-                  </div>
-                </a>
-              </div>
-              <!-- Footer -->
-              <div class="c-footer">
-                <a href="#" class="footer-link">Shop Now</a>
-              </div>
-            </div>
-
-            <!-- collection-box-4 -->
-            <div class="collection-box">
-              <div class="c-header">
-                <!-- Header -->
-                <h2 class="header-text">Beauty Picks</h2>
-              </div>
-              <!-- Body -->
-              <div class="c-body">
-                <a href="#" class="c-link">
-                  <div class="body-image">
-                    <img src="./images/stuff/beauty.jpg" alt="beauty">
-                  </div>
-                </a>
-              </div>
-              <!-- Footer -->
-              <div class="c-footer">
-                <a href="#" class="footer-link">See More</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Feature Categories -->
-      <section class="feature-categories">
-        <!-- Heading -->
-        <div class="categories-heading">
-          <h2>Featured Categories</h2>
-        </div>
-        
-        <!-- Box -->
-        <ul class="container">
-          <!-- Item 1 -->
-          <li class="item">
-            <div class="feature-box">
-              <a href="#"><img src="./images/stuff/tablet.jpg" alt="tablet"></a>
-            </div>
-            <span>Phone - Tablet</span>
-          </li>
-
-          <!-- Item 2 -->
-          <li class="item">
-            <div class="feature-box">
-              <a href="#"><img src="./images/stuff/electronic.jpg" alt="electronic"></a>
-            </div>
-            <span>Electronic</span>
-          </li>
-
-          <!-- Item 3 -->
-          <li class="item">
-            <div class="feature-box">
-              <a href="#"><img src="./images/stuff/headphone.jpg" alt="headphone"></a>
-            </div>
-            <span>Accessories - Digital Equipments</span>
-          </li>
-
-          <!-- Item 4 -->
-          <li class="item">
-            <div class="feature-box">
-              <a href="#"><img src="./images/stuff/macbook.jpg" alt=""></a>
-            </div>
-            <span>Laptop - IT Equipments</span>
-          </li>
-
-          <!-- Item 5 -->
-          <li class="item">
-            <div class="feature-box">
-              <a href="#"><img src="./images/stuff/camera.jpg" alt=""></a>
-            </div>
-            <span>Camera - Video Recording</span>
-          </li>
-
-          <!-- Item 6 -->
-          <li class="item">
-            <div class="feature-box">
-              <a href="#"><img src="./images/stuff/appliances.jpg" alt="appliances"></a>
-            </div>
-            <span>Electric Appliances</span>
-          </li>
-
-          <!-- Item 7 -->
-          <li class="item">
-            <div class="feature-box">
-              <a href="#"><img src="./images/stuff/houseware.png" alt="houseware"></a>
-            </div>
-            <span>Houseware</span>
-          </li>
-        </ul>
-        
-        
-
-      </section>
-
-      <!-- Mall -->
-      <section class="mall-shop">
-        <!-- Heading -->
-        <div class="shop-heading">
-          <h2>Shop Mall</h2>
-        </div>
-
-        <!-- products -->
-        <div class="shop-container">
-
-          <!-- shop-box-1 -->
-          <a href="./src/store/homestore1.html">
-            <div class="shop-box">
-              <!-- shop-overlay -->
-              <div class="s-overlay"></div>
-              <!-- shop-img -->
-              <div class="s-img">
-                <img src="./src/store/images/category/category-3.jpg" alt="longtr&co-store">
-              </div>
-              <!-- shop-icon -->
-              <div class="s-icon">
-                <img src="./src/store/images/logo/logo.png" alt="longtr&co-logo">
-              </div>  
-              <!-- shop details -->
-              <div class="s-name">LongTr & Co</div>
-              <p class="s-name-p">LongTr & Co</p>
-              <p class="s-name-p">(Currently Available)</p>
-            </div>
-          </a>
-          
-
-          <!-- shop-box-2 -->
-          <div class="shop-box">
-            <!-- shop-overlay -->
-            <div class="s-overlay"></div>
-            <!-- shop-img -->
-            <div class="s-img">
-              <img src="./images/icon/nike-shop.jpg" alt="nike-store">
-            </div>
-            <!-- shop-icon -->
-            <div class="s-icon">
-              <img src="./images/icon/nike-logo.jpg" alt="nike-logo">
-            </div>
-            <!-- shop details -->
-            <div class="s-name">Nike</div>
-            <p class="s-name-p">Nike</p>
-          </div>
-
-          <!-- shop-box-3 -->
-          <div class="shop-box">
-            <!-- shop-overlay -->
-            <div class="s-overlay"></div>
-            <!-- shop-img -->
-            <div class="s-img">
-              <img src="./images/icon/rolex-shop.jpg" alt="rolex-store">
-            </div>
-            <!-- shop-icon -->
-            <div class="s-icon">
-              <img src="./images/icon/rolex-logo.jpg" alt="rolex-logo">
-            </div>
-            <!-- shop details -->
-            <div class="s-name">Rolex</div>
-            <p class="s-name-p">Rolex</p>
-          </div>
-
-          <!-- shop-box-4 -->
-          <div class="shop-box">
-            <!-- shop-overlay -->
-            <div class="s-overlay"></div>
-            <!-- shop-img -->
-            <div class="s-img">
-              <img src="./images/icon/lego-shop.jpg" alt="lego-store">
-            </div>
-            <!-- shop-icon -->
-            <div class="s-icon">
-              <img src="./images/icon/lego-logo.jpg" alt="lego-logo">
-            </div>
-            <!-- shop details -->
-            <div class="s-name">Lego</div>
-            <p class="s-name-p">Lego</p>
-          </div>
-
-          <!-- shop-box-5 -->
-          <div class="shop-box">
-            <!-- shop-overlay -->
-            <div class="s-overlay"></div>
-            <!-- shop-img -->
-            <div class="s-img">
-              <img src="./images/icon/kitchencraft-shop.jpg" alt="kitchencraft-store">
-            </div>
-            <!-- shop-icon -->
-            <div class="s-icon">
-              <img src="./images/icon/kitchencraft-logo.jpg" alt="kitchencraft-logo">
-            </div>
-            <!-- shop details -->
-            <div class="s-name">KitchenCraft</div>
-            <p class="s-name-p">KitchenCraft</p>
-          </div>
-
-          <!-- shop-box-6 -->
-          <div class="shop-box">
-            <!-- shop-overlay -->
-            <div class="s-overlay"></div>
-            <!-- shop-img -->
-            <div class="s-img">
-              <img src="./images/icon/apple-shop.jpg" alt="apple-store">
-            </div>
-            <!-- shop-icon -->
-            <div class="s-icon">
-              <img src="./images/icon/apple-logo.jpg" alt="apple-logo">
-            </div>
-            <!-- shop details -->
-            <div class="s-name">Apple Store</div>
-            <p class="s-name-p">Apple Store</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Suggestion Today -->
-      <section class="suggestion-today">
-        <!-- Heading -->
-        <div class="suggestion-heading">
-          <h2>New Arrival</h2>
-        </div>
-
-        <!-- products -->
-        <div class="product-container">
-
-          <!-- porduct-box-1 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/feature-1.jpg" alt="product-1">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
+                <!-- shop-box-2 -->
+                <div class="shop-box">
+                    <!-- shop-overlay -->
+                    <div class="s-overlay"></div>
+                    <!-- shop-img -->
+                    <div class="s-img">
+                        <img src="./images/icon/nike-shop.jpg" alt="nike-store">
+                    </div>
+                    <!-- shop-icon -->
+                    <div class="s-icon">
+                        <img src="./images/icon/nike-logo.jpg" alt="nike-logo">
+                    </div>
+                    <!-- shop details -->
+                    <div class="s-name">Nike</div>
+                    <p class="s-name-p">Nike</p>
                 </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
+
+                <!-- shop-box-3 -->
+                <div class="shop-box">
+                    <!-- shop-overlay -->
+                    <div class="s-overlay"></div>
+                    <!-- shop-img -->
+                    <div class="s-img">
+                        <img src="./images/icon/rolex-shop.jpg" alt="rolex-store">
+                    </div>
+                    <!-- shop-icon -->
+                    <div class="s-icon">
+                        <img src="./images/icon/rolex-logo.jpg" alt="rolex-logo">
+                    </div>
+                    <!-- shop details -->
+                    <div class="s-name">Rolex</div>
+                    <p class="s-name-p">Rolex</p>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- porduct-box-2 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/feature-2.jpg" alt="product-2">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
+                <!-- shop-box-4 -->
+                <div class="shop-box">
+                    <!-- shop-overlay -->
+                    <div class="s-overlay"></div>
+                    <!-- shop-img -->
+                    <div class="s-img">
+                        <img src="./images/icon/lego-shop.jpg" alt="lego-store">
+                    </div>
+                    <!-- shop-icon -->
+                    <div class="s-icon">
+                        <img src="./images/icon/lego-logo.jpg" alt="lego-logo">
+                    </div>
+                    <!-- shop details -->
+                    <div class="s-name">Lego</div>
+                    <p class="s-name-p">Lego</p>
                 </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
+
+                <!-- shop-box-5 -->
+                <div class="shop-box">
+                    <!-- shop-overlay -->
+                    <div class="s-overlay"></div>
+                    <!-- shop-img -->
+                    <div class="s-img">
+                        <img src="./images/icon/kitchencraft-shop.jpg" alt="kitchencraft-store">
+                    </div>
+                    <!-- shop-icon -->
+                    <div class="s-icon">
+                        <img src="./images/icon/kitchencraft-logo.jpg" alt="kitchencraft-logo">
+                    </div>
+                    <!-- shop details -->
+                    <div class="s-name">KitchenCraft</div>
+                    <p class="s-name-p">KitchenCraft</p>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- porduct-box-3 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/feature-3.jpg" alt="product-3">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
+                <!-- shop-box-6 -->
+                <div class="shop-box">
+                    <!-- shop-overlay -->
+                    <div class="s-overlay"></div>
+                    <!-- shop-img -->
+                    <div class="s-img">
+                        <img src="./images/icon/apple-shop.jpg" alt="apple-store">
+                    </div>
+                    <!-- shop-icon -->
+                    <div class="s-icon">
+                        <img src="./images/icon/apple-logo.jpg" alt="apple-logo">
+                    </div>
+                    <!-- shop details -->
+                    <div class="s-name">Apple Store</div>
+                    <p class="s-name-p">Apple Store</p>
                 </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
+
             </div>
-          </div>
+        </section>
 
-          <!-- porduct-box-4 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/phone-1.jpg" alt="product-4">
+        <!-- Feature Product -->
+        <section class="suggestion-today">
+            <!-- Heading -->
+            <div class="suggestion-heading">
+                <h2>Feature Product</h2>
             </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
+
+            <!-- products -->
+            <div class="product-container">
+
+                <!-- porduct-box-1 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+                        <!-- img -->
+                        <img src="./images/product/feature-1.jpg" alt="product-1">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
+
+                <!-- porduct-box-2 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/feature-2.jpg" alt="product-2">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <!-- porduct-box-3 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/feature-3.jpg" alt="product-3">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-4 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/phone-1.jpg" alt="product-4">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-5 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/phone-2.jpg" alt="product-5">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-6 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/phone-3.jpg" alt="product-6">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-7 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/laptop-1.jpg" alt="product-7">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-8 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/laptop-2.jpg" alt="product-8">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-9 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/laptop-3.jpg" alt="product-9">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-10 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/new-1.jpg" alt="product-10">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-11 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/new-2.jpg" alt="product-11">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-12 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/new-3.jpg" alt="product-12">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-13 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/original-1.jpg" alt="product-13">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-14 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/original-2.jpg" alt="product-14">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- porduct-box-15 -->
+                <div class="product-box">
+                    <!-- product-img -->
+                    <div class="product-img">
+
+                        <!-- img -->
+                        <img src="./images/product/original-3.jpg" alt="product-15">
+                    </div>
+                    <!-- details -->
+                    <div class="product-details">
+                        <div class="p-segment"></div>
+                        <span class="p-title">Title</span>
+                        <div class="user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="footing">(10)</span>
+                        </div>
+                        <div class="p-price">
+                            <div class="price-first-line">
+                                <span class="currency"> &#36 </span>
+                                <span class="price">14.99</span>
+                            </div>
+                            <div class="price-second-line">
+                                <div class="price-text">
+                                    <span class="currency"> &#36 </span>
+                                    <span class="price">29.88</span>
+                                </div>
+                                <span class="discount-text">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
+        </section>
 
-          <!-- porduct-box-5 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/phone-2.jpg" alt="product-5">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-6 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/phone-3.jpg" alt="product-6">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-7 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/laptop-1.jpg" alt="product-7">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-8 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/laptop-2.jpg" alt="product-8">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-9 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/laptop-3.jpg" alt="product-9">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-10 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/new-1.jpg" alt="product-10">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-11 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/new-2.jpg" alt="product-11">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-12 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/new-3.jpg" alt="product-12">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-13 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/original-1.jpg" alt="product-13">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-14 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/original-2.jpg" alt="product-14">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- porduct-box-15 -->
-          <div class="product-box">
-            <!-- product-img -->
-            <div class="product-img">
-
-              <!-- img -->
-              <img src="./images/product/original-3.jpg" alt="product-15">
-            </div>
-            <!-- details -->
-            <div class="product-details">
-              <div class="p-segment"></div>
-              <span class="p-title">Title</span>
-              <div class="user-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="footing">(10)</span>
-              </div>
-              <div class="p-price">
-                <div class="price-first-line">
-                  <span class="currency"> &#36 </span>
-                  <span class="price">14.99</span>
-                </div>
-                <div class="price-second-line">
-                  <div class="price-text">
-                    <span class="currency"> &#36 </span>
-                    <span class="price">29.88</span>
-                  </div>
-                  <span class="discount-text">50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-
-        </div>
-      </section>
-
-      <!-- service box -->
-      <section class="services">
         <!-- Service Box -->
-        <div class="services-box">
-          <i class="fas fa-shipping-fast"></i>
-          <span>Free Shipping</span>
-          <p>Free Shipping for all VN order</p>
-        </div>
-        <!-- Service Box -->
-        <div class="services-box">
-          <i class="fas fa-headphones-alt"></i>
-          <span>Support 24/7</span>
-          <p>We support 24 hour a day</p>
-        </div>
-        <!-- Service Box -->
-        <div class="services-box">
-          <i class="fas fa-sync"></i>
-          <span>100% Money Back</span>
-          <p>We will support you if having issue</p>
-        </div>
-      </section>
+        <section class="services">
+            <!-- Service Box -->
+            <div class="services-box">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Free Shipping</span>
+                <p>Free Shipping for all VN order</p>
+            </div>
+            <!-- Service Box -->
+            <div class="services-box">
+                <i class="fas fa-headphones-alt"></i>
+                <span>Support 24/7</span>
+                <p>We support 24 hour a day</p>
+            </div>
+            <!-- Service Box -->
+            <div class="services-box">
+                <i class="fas fa-sync"></i>
+                <span>100% Money Back</span>
+                <p>We will support you if having issue</p>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer" id="footer">
-      <div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row">
 
-          <!-- Company  -->
-          <div class="footer-col">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="./src/about-us.html">About Us</a></li>
-              <li><a href="./src/term-of-service.html">Term of Service</a></li>
-              <li><a href="./src/privacy-policy.html">Privacy Policy</a></li>
-              <li><a href="./src/return&refundpolicy.html">Return & Refund Policy</a></li>
-              <li><a href="#">Affiliate Program</a></li>
-              
-            </ul>
-          </div>
+                <!-- Company  -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="./src/about-us.html">About Us</a></li>
+                        <li><a href="./src/term-of-service.html">Term of Service</a></li>
+                        <li><a href="./src/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="./src/return&refundpolicy.html">Return & Refund Policy</a></li>
+                        <li><a href="./src/cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
 
-          <!-- Get Help -->
-          <div class="footer-col">
-            <h4>Get Help</h4>
-            <ul>
-              <li><a href="./src/faq.html">F.A.Q</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Order Status</a></li>
-              <li><a href="#">Sell Product ?</a></li>
-            </ul>
-          </div>
+                    </ul>
+                </div>
 
-          <!-- Payment, Shipping -->
-          <div class="footer-col">
-            <h4>Payment Options</h4>
-            <ul class="pay-ship-logo">
-              <li><img src="./images/visa.png" alt="visa" class="pay-ship"></li>
-              <li><img src="./images/mastercard.png" alt="mastercard" class="pay-ship"></li>
-              <li><img src="./images/momo.png" alt="momo" class="pay-ship"></li>
-            </ul>
-          </div>
+                <!-- Get Help -->
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="./src/faq.html">F.A.Q</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Sell Product ?</a></li>
+                    </ul>
+                </div>
 
-          <!-- Follow Us on -->
-          <div class="footer-col">
-            <h4>Follow Us</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+                <!-- Payment, Shipping -->
+                <div class="footer-col">
+                    <h4>Payment Options</h4>
+                    <ul class="pay-ship-logo">
+                        <li><img src="./images/visa.png" alt="visa" class="pay-ship"></li>
+                        <li><img src="./images/mastercard.png" alt="mastercard" class="pay-ship"></li>
+                        <li><img src="./images/momo.png" alt="momo" class="pay-ship"></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us on -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                </div>
+
             </div>
-            
-          </div>
-
         </div>
-      </div>
-      <!-- Copyright -->
-      <div class="copyright">
-        <span>&#169 2021 - Online Mall. All right reserved</span>
-      </div>
+        <!-- Copyright -->
+        <div class="copyright">
+            <span>&#169 2021 - Online Mall. All right reserved</span>
+        </div>
     </footer>
 
-  </body>
+</body>
+
 </html>
