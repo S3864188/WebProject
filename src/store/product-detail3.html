@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>All Products</title>
+    <title>Richard Mille details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="shop1.css">
+    <link rel="stylesheet" href="../../css/cookie.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap " rel="stylesheet ">
-
 </head>
 <div class="header">
     <div class="container">
@@ -23,7 +23,7 @@
                     <label for="toggle-responsive" class="toggle-menu"><img src="images/logo/menu.png" width="30px" height="30px"></label>
                     <input type="checkbox" id="toggle-responsive" />
                     <ul class="nav level-one">
-                        <li><a href="../../index.html"> '<- Mall' </a></li>
+                        <li><a href="../../index.html">Mall</a></li>
                         <li><a href="homestore1.html">Home</a></li>
 
                         <li class="parent">
@@ -56,17 +56,29 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="../src/about-us.html">About Us</a></li>
-                        <li><a href="../src/contact_us.html">Contact</a></li>
+                        <li><a href="../about-us.html">About Us</a></li>
+                        <li><a href="../contact_us.html">Contact</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="cart-icon">
-                <a href="../cart.html"><img src="images/logo/cart.png" width="30px" height="30px"></a>
+                <a href="cart.html"><img src="images/logo/cart.png" width="30px" height="30px"></a><span>0</span>
             </div>
         </div>
     </div>
 </div>
+<section class="cookie">
+    <div class="cookie-container">
+        <p>
+            We use cookies in this website to give you the best experience on our site and show you relevant ads. To find out more, read our
+            <a href="./src/privacy-policy.html">privacy policy</a> and <a href="./src/cookie-policy.html">cookie policy</a>.
+        </p>
+
+        <button class="cookie-btn">I understand</button>
+        <a href="#" class="learnmore">Learn More</a>
+    </div>
+    <script src="../../js/cookie.js"></script>
+</section>
 
 <body>
     <!-----single product details--->
@@ -75,40 +87,48 @@
         <div class="row">
             <div class="col-2">
                 <img src="images/gallery/gallery-1.jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery/gallery-1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery/gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery/gallery-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery/gallery-4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
             </div>
             <div class="col-2">
                 <!---Input-->
-                <p>Richard Mille</p>
-                <h1>Richard Mille RM07-03 Marshmallow</h1>
-                <h4>$100000.00</h4>
-                <select>
-                    <option>Select Size</option> <!---Input-->
-                    <option>45.32mm</option>
-                </select>
-                <input type="number" value="1">
-                <a href="../cart.html" class="btn">Add To Cart</a>
+                <div class="items">
+                    <p>Richard Mille</p>
+                    <h1>Richard Mille RM07-03 Marshmallow</h1>
+                    <h4>$100000.00</h4>
+                    <div class="add_btn">
+                        <button>Add To Cart</button>
+                        <a class="atToCart cart1" href="cart.html">Buy Now</a>
+                    </div>
 
-                <!---Input-->
-                <h3>Product Details</h3>
-                <p>Ceramic case</p>
-                <p>Self-Winding Mecanical</p>
-                <p>Power Reserve: 50h</p>
+                    <!---Input-->
+                    <div class="input-product-detail">
+                        <h3>Product Details</h3>
+                        <p>Ceramic case</p>
+                        <p>Self-Winding Mecanical</p>
+                        <p>Power Reserve: 50h</p>
+                    </div>
+                </div>
             </div>
             <!---addition img product detail-->
-            <div class="small-img-row">
-                <div class="small-img-col">
-                    <img src="images/gallery/gallery-2.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="images/gallery/gallery-3.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="images/gallery/gallery-4.jpg" width="100%" class="small-img">
-                </div>
-            </div>
+
         </div>
 
     </div>
+
 
     <!-----title-->
     <div class="small-container">
@@ -186,5 +206,28 @@
         </div>
     </div>
 </body>
+
+
+
+<script src="store_cart.js"></script>
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function() {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function() {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function() {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function() {
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+
 
 </html>

@@ -383,8 +383,6 @@ nav .content .links{
 
 
 
-
-
 /*
 ===============
 ===Home Page=== 
@@ -583,7 +581,7 @@ nav .content .links{
 }
 
 .c-body{
-  height: 275px;
+  height: 235px;
   padding: 0 20px;
 }
 .c-link{
@@ -623,9 +621,11 @@ nav .content .links{
 
 .categories-heading{
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; 
   align-items: flex-start;
+  flex-direction: column;
   margin-left: 160px;
+  margin-top: 40px;
 }
 
 .categories-heading h2{
@@ -634,7 +634,6 @@ nav .content .links{
   text-transform: uppercase;
   color: #202020;
   font-weight: 900;
-  
 }
 
 .feature-box{
@@ -658,43 +657,139 @@ nav .content .links{
   height: 40px;
   font-size: 85%;
   font-weight: 600;
-  margin: 6px;
   color: #444444;
   text-align: center;
+  position: absolute;
 }
 
 .item{
-  display: flex;
-  flex-direction: column;
+  display: block;
+  width: 188px;
+  height: 270px;
+  background-color: #fff;
+  margin: 5px 5px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
   justify-content: center;
   align-items: center;
-  width: 13%;
-  height: 13%;
   border: 1px solid gray;
-  margin: 5px 5px;
-  cursor: pointer;
-  background: #fff;
+
 }
 
 .item:hover{
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .feature-categories .container{
-  width: 80%;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px 13% 40px;
+  margin: 10px 10% 40px;
 }
 
 
-/* Shop Mall */
-.shop-heading{
+
+/* New Store, Products */
+.new-heading{
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; 
   align-items: flex-start;
   flex-direction: column;
   margin-left: 160px;
+  margin-top: 40px;
+}
+
+.new-heading h2{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #202020;
+  font-weight: 900;
+}
+
+.new-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  /* height: 300px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+section .thumbnail-box-1, 
+section .thumbnail-box-2 {
+  width: 190px;
+  flex: 0 0 auto;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid black;
+  overflow: hidden;
+  transform: scale(0.9);
+  transition: all .3s;
+}
+
+section .thumbnail-box-1:hover
+section .thumbnail-box-2:hover {
+  transform: scale(0.95);
+}
+
+.new-slide-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.control .slide-left,
+.control .slide-right{
+  position: absolute;
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color:#ffffff;
+  background-color: #4897D8;
+  text-align: center;
+  line-height: 40px;
+  font-size:20px;
+  cursor:pointer;
+  transition: all .5s ease;
+}
+.control .slide-left:hover,
+.control .slide-right:hover{
+	background-color: #000000;
+}
+.control .slide-left{
+ left: 180px;
+}
+.control .slide-right{
+ right: 180px;
+}
+
+@media only screen and (max-width: 767px){
+	.control{
+		display: none;
+	}
+}
+
+/* Feature Stores */
+.shop-heading{
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 160px;
+  margin-top: 40px;
 }
 
 .shop-heading h2{
@@ -804,7 +899,7 @@ nav .content .links{
   flex-direction: column;
 }
 
-/* Suggestion Today */
+/* Feature Products */
 .suggestion-heading{
   display: flex;
   justify-content: flex-start; 

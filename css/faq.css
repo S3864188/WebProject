@@ -490,18 +490,23 @@ main{
 }
 .parent-tab input:checked ~ .content,
 .child-tab input:checked ~ .sub-content{
-  max-height: 100vh;
+  max-height: 300vh;
 }
 .tab-tab input:checked ~ .content{
   padding: 15px 20px;
 }
-.parent-tab .content p,
-.child-tab .sub-content p{
+
+.child-tab .sub-content p,
+.child-tab .sub-content h2{
   padding: 15px 20px;
-  font-size: 16px;
 }
 .child-tab .sub-content p{
   font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.child-tab .sub-content h2{
+  font-size: 30px;
 }
 input[type="radio"],
 input[type="checkbox"]{
